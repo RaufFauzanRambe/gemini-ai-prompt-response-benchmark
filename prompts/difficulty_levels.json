@@ -1,0 +1,130 @@
+{
+  "difficulty_levels": [
+    {
+      "id": "DIFF-001",
+      "level": "easy",
+      "description": "Straightforward prompts requiring basic knowledge, simple explanations, or standard task completion. Suitable for general audiences without specialized expertise.",
+      "characteristics": [
+        "Single concept or straightforward question",
+        "No complex reasoning or multi-step analysis required",
+        "General audience appropriate",
+        "Standard factual or procedural knowledge",
+        "Short to medium expected response length (50-500 words)",
+        "Minimal domain-specific terminology"
+      ],
+      "evaluation_criteria": {
+        "primary_focus": "Clarity and simplicity of explanation",
+        "secondary_focus": "Factual accuracy and conciseness",
+        "penalty_factors": [
+          "Unnecessary jargon or technical complexity",
+          "Overly verbose explanations for simple concepts",
+          "Missing basic factual elements"
+        ],
+        "bonus_factors": [
+          "Use of helpful analogies or examples",
+          "Engaging and accessible tone",
+          "Appropriate brevity"
+        ]
+      },
+      "example_prompts": [
+        "Explain the greenhouse effect in simple terms",
+        "What is supply and demand?",
+        "Write a haiku about spring",
+        "Compose a professional email declining a job offer"
+      ],
+      "expected_response_length": "50-500 words",
+      "prompt_count": 12,
+      "avg_quality_score": 4.38
+    },
+    {
+      "id": "DIFF-002",
+      "level": "medium",
+      "description": "Prompts requiring moderate depth of analysis, multi-faceted explanations, or intermediate-level domain knowledge. Suitable for readers with some familiarity with the topic.",
+      "characteristics": [
+        "Multi-aspect question requiring structured response",
+        "Moderate analytical depth or comparative reasoning",
+        "May require synthesis of multiple concepts",
+        "Professional or educated audience appropriate",
+        "Medium response length (200-1500 words)",
+        "Some domain-specific terminology expected"
+      ],
+      "evaluation_criteria": {
+        "primary_focus": "Analytical depth and structured reasoning",
+        "secondary_focus": "Evidence-based claims and comprehensive coverage",
+        "penalty_factors": [
+          "Superficial treatment of key aspects",
+          "Poor organization or logical flow",
+          "Unsupported claims or assertions",
+          "Missing important dimensions of the question"
+        ],
+        "bonus_factors": [
+          "Well-structured response with clear sections",
+          "Use of relevant examples and data",
+          "Balanced consideration of multiple perspectives",
+          "Practical insights or actionable recommendations"
+        ]
+      },
+      "example_prompts": [
+        "Analyze the economic impact of AI on the labor market",
+        "Compare REST APIs and GraphQL",
+        "Write a persuasive essay on the four-day work week",
+        "Explain cognitive biases with examples"
+      ],
+      "expected_response_length": "200-1500 words",
+      "prompt_count": 24,
+      "avg_quality_score": 4.33
+    },
+    {
+      "id": "DIFF-003",
+      "level": "hard",
+      "description": "Complex prompts requiring deep expertise, multi-step reasoning, advanced technical skills, or nuanced analysis. Suitable for domain experts or highly technical audiences.",
+      "characteristics": [
+        "Complex multi-faceted question requiring deep expertise",
+        "Advanced technical implementation or mathematical derivation",
+        "May involve trade-off analysis or architectural decisions",
+        "Expert or highly technical audience appropriate",
+        "Long response length (500-3000 words) including code/formulas",
+        "Significant domain-specific terminology"
+      ],
+      "evaluation_criteria": {
+        "primary_focus": "Technical correctness and depth of expertise",
+        "secondary_focus": "Practical applicability and edge case handling",
+        "penalty_factors": [
+          "Technical inaccuracies or incorrect implementations",
+          "Missing critical edge cases or failure modes",
+          "Inefficient algorithms or suboptimal designs",
+          "Lack of error handling or security considerations"
+        ],
+        "bonus_factors": [
+          "Production-ready code with comprehensive error handling",
+          "Performance analysis and optimization considerations",
+          "Scalability and maintainability discussions",
+          "Security best practices and vulnerability awareness"
+        ]
+      },
+      "example_prompts": [
+        "Implement the A* algorithm with diagonal movement and custom heuristics",
+        "Design a database schema for social media with optimal query performance",
+        "Derive the gradient formula and explain its geometric interpretation",
+        "Design a load balancing strategy for 99.99% uptime"
+      ],
+      "expected_response_length": "500-3000 words",
+      "prompt_count": 14,
+      "avg_quality_score": 4.24
+    }
+  ],
+  "difficulty_distribution": {
+    "easy": 12,
+    "medium": 24,
+    "hard": 14
+  },
+  "scoring_calibration": {
+    "note": "Difficulty levels are calibrated against human expert baseline. A score of 4.0+ indicates near-expert quality across all difficulty levels.",
+    "human_baseline": {
+      "easy": 4.5,
+      "medium": 4.2,
+      "hard": 3.8
+    }
+  },
+  "last_updated": "2026-04-24"
+}

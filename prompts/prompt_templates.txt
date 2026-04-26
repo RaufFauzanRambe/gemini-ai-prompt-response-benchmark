@@ -1,0 +1,227 @@
+================================================================================
+GEMINI AI PROMPT-RESPONSE BENCHMARK - PROMPT TEMPLATES
+================================================================================
+
+This file contains standardized prompt templates used across the benchmark
+dataset. Templates use the following placeholder format:
+  {variable} - Required variable that must be filled in
+  [variable] - Optional variable with a default value
+
+================================================================================
+SECTION 1: EXPLANATION TEMPLATES
+================================================================================
+
+Template ID: EXPLAIN-001
+Difficulty: easy
+Category: General Knowledge
+---
+Explain {concept} in simple terms that a {audience_level} could understand.
+---
+
+Template ID: EXPLAIN-002
+Difficulty: medium
+Category: Technical
+---
+Explain {concept} and discuss its implications for {domain}. Include at least
+{min_examples} real-world examples.
+---
+
+Template ID: EXPLAIN-003
+Difficulty: hard
+Category: Academic
+---
+Provide a rigorous explanation of {concept}, including its mathematical foundation,
+historical development, and modern applications in {field}. Address common
+misconceptions and current research directions.
+---
+
+================================================================================
+SECTION 2: PROGRAMMING TEMPLATES
+================================================================================
+
+Template ID: CODE-001
+Difficulty: easy
+Category: Programming
+---
+Write a {language} function that {task_description}. Include comments explaining
+the approach.
+---
+
+Template ID: CODE-002
+Difficulty: medium
+Category: Programming
+---
+Implement {algorithm_or_data_structure} in {language} with the following features:
+- {feature_1}
+- {feature_2}
+- {feature_3}
+
+Include unit tests and time complexity analysis.
+---
+
+Template ID: CODE-003
+Difficulty: hard
+Category: Programming
+---
+Design and implement a {system_type} in {language} that meets the following
+requirements:
+- {requirement_1}
+- {requirement_2}
+- {requirement_3}
+- {requirement_4}
+
+The implementation should handle edge cases, include comprehensive error handling,
+and be production-ready. Include documentation and examples.
+---
+
+Template ID: CODE-004
+Difficulty: hard
+Category: Database
+---
+Design a database schema for {application_type} that supports:
+- {feature_1}
+- {feature_2}
+- {feature_3}
+
+Requirements:
+- Scale: {expected_scale}
+- Query performance: {performance_requirement}
+- Consistency model: {consistency_requirement}
+
+Include table definitions, indexes, and optimization notes.
+---
+
+================================================================================
+SECTION 3: CREATIVE WRITING TEMPLATES
+================================================================================
+
+Template ID: CREATIVE-001
+Difficulty: easy
+Category: Creative Writing
+---
+Write a {format} about {topic}. Tone: {tone}.
+---
+
+Template ID: CREATIVE-002
+Difficulty: medium
+Category: Creative Writing
+---
+Write a short story ({max_words} words maximum) that begins with the sentence:
+"{opening_sentence}"
+Genre: {genre}
+Theme: {theme}
+---
+
+Template ID: CREATIVE-003
+Difficulty: medium
+Category: Poetry
+---
+Compose a {poem_type} about {subject}. Style: {style_description}.
+---
+
+================================================================================
+SECTION 4: ANALYSIS TEMPLATES
+================================================================================
+
+Template ID: ANALYSIS-001
+Difficulty: medium
+Category: Economics/Business
+---
+Analyze {topic} over {time_period}, considering both {aspect_1} and {aspect_2}.
+Support your analysis with data, examples, and expert perspectives.
+---
+
+Template ID: ANALYSIS-002
+Difficulty: medium
+Category: Comparative
+---
+Compare and contrast {concept_a} and {concept_b} with respect to:
+- {criterion_1}
+- {criterion_2}
+- {criterion_3}
+
+Provide real-world examples and a recommendation for when to use each.
+---
+
+Template ID: ANALYSIS-003
+Difficulty: hard
+Category: Strategic
+---
+{problem_statement}
+
+Constraints:
+- {constraint_1}
+- {constraint_2}
+- {constraint_3}
+
+Provide a comprehensive solution with trade-off analysis, implementation
+roadmap, and risk mitigation strategies.
+---
+
+================================================================================
+SECTION 5: PERSUASIVE WRITING TEMPLATES
+================================================================================
+
+Template ID: PERSUASIVE-001
+Difficulty: medium
+Category: Essay
+---
+Write a persuasive essay {stance} the implementation of {policy_or_practice}.
+Your essay should:
+- Present a clear thesis statement
+- Support arguments with evidence and data
+- Address and refute counterarguments
+- Conclude with actionable recommendations
+Length: {min_words}-{max_words} words
+---
+
+================================================================================
+SECTION 6: TRANSLATION TEMPLATES
+================================================================================
+
+Template ID: TRANSLATE-001
+Difficulty: medium
+Category: Linguistics
+---
+Translate the following {source_language} text into {target_languages}:
+"{text}"
+
+For each translation, explain any cultural adaptations or linguistic nuances
+that were necessary.
+---
+
+================================================================================
+SECTION 7: MATHEMATICS TEMPLATES
+================================================================================
+
+Template ID: MATH-001
+Difficulty: hard
+Category: Mathematics
+---
+Derive the {mathematical_concept} and explain its geometric interpretation
+in the context of {application_domain}.
+---
+
+Template ID: MATH-002
+Difficulty: medium
+Category: Mathematics
+---
+Explain the {mathematical_concept} and why the optimal strategy is
+counterintuitive. Include both intuitive and formal explanations.
+---
+
+================================================================================
+TEMPLATE USAGE NOTES
+================================================================================
+
+1. Variables in {braces} are MANDATORY and must be replaced with actual values.
+2. Variables in [braces] are OPTIONAL and may be omitted for default behavior.
+3. Each template has been tested for consistency and clarity across multiple uses.
+4. Templates are designed to be language-agnostic unless a specific language is
+   specified in the variable values.
+5. When adding new templates, follow the existing naming convention:
+   CATEGORY-NUMBER (e.g., EXPLAIN-001, CODE-002).
+
+================================================================================
+END OF PROMPT TEMPLATES
+================================================================================

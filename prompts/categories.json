@@ -1,0 +1,346 @@
+{
+  "categories": [
+    {
+      "id": "CAT-001",
+      "name": "Science & Technology",
+      "description": "Prompts related to scientific concepts, technological explanations, and technical knowledge",
+      "example_prompts": [
+        "Explain the concept of quantum entanglement in simple terms",
+        "Describe how blockchain technology works",
+        "What is the difference between machine learning and deep learning?"
+      ],
+      "response_expectations": {
+        "factual_accuracy_weight": 0.35,
+        "clarity_weight": 0.25,
+        "completeness_weight": 0.20,
+        "structure_weight": 0.20
+      },
+      "prompt_count": 8
+    },
+    {
+      "id": "CAT-002",
+      "name": "Programming",
+      "description": "Prompts requesting code implementation, algorithm design, and software development tasks",
+      "example_prompts": [
+        "Write a Python function that implements the A* pathfinding algorithm",
+        "Implement a binary search tree in C++",
+        "Create a REST API endpoint for user authentication"
+      ],
+      "response_expectations": {
+        "code_correctness_weight": 0.35,
+        "code_efficiency_weight": 0.20,
+        "code_readability_weight": 0.20,
+        "documentation_weight": 0.25
+      },
+      "prompt_count": 5
+    },
+    {
+      "id": "CAT-003",
+      "name": "Creative Writing",
+      "description": "Prompts requesting creative content including stories, poems, and imaginative compositions",
+      "example_prompts": [
+        "Compose a haiku about the changing of seasons",
+        "Write a short story that begins with a specific sentence",
+        "Write a poem about the beauty of the night sky"
+      ],
+      "response_expectations": {
+        "creativity_weight": 0.30,
+        "language_quality_weight": 0.25,
+        "emotional_impact_weight": 0.25,
+        "originality_weight": 0.20
+      },
+      "prompt_count": 4
+    },
+    {
+      "id": "CAT-004",
+      "name": "Mathematics",
+      "description": "Prompts involving mathematical derivations, proofs, and quantitative explanations",
+      "example_prompts": [
+        "Derive the mathematical formula for the gradient",
+        "Explain the Monty Hall problem",
+        "Prove the Pythagorean theorem using algebra"
+      ],
+      "response_expectations": {
+        "mathematical_rigor_weight": 0.35,
+        "proof_correctness_weight": 0.30,
+        "explanation_clarity_weight": 0.20,
+        "notation_quality_weight": 0.15
+      },
+      "prompt_count": 2
+    },
+    {
+      "id": "CAT-005",
+      "name": "Economics & Business",
+      "description": "Prompts about economic theory, business strategy, market analysis, and entrepreneurship",
+      "example_prompts": [
+        "Analyze the economic impact of AI on the global labor market",
+        "Explain supply and demand with practical examples",
+        "Discuss the concept of opportunity cost"
+      ],
+      "response_expectations": {
+        "analytical_depth_weight": 0.30,
+        "factual_basis_weight": 0.25,
+        "practical_relevance_weight": 0.25,
+        "reasoning_quality_weight": 0.20
+      },
+      "prompt_count": 4
+    },
+    {
+      "id": "CAT-006",
+      "name": "Translation & Linguistics",
+      "description": "Prompts involving language translation, linguistic analysis, and cross-cultural communication",
+      "example_prompts": [
+        "Translate a proverb into multiple languages",
+        "Explain the grammatical differences between two languages",
+        "Analyze the etymology of a specific word"
+      ],
+      "response_expectations": {
+        "translation_accuracy_weight": 0.35,
+        "cultural_sensitivity_weight": 0.25,
+        "linguistic_depth_weight": 0.25,
+        "completeness_weight": 0.15
+      },
+      "prompt_count": 1
+    },
+    {
+      "id": "CAT-007",
+      "name": "Computer Networking",
+      "description": "Prompts about network protocols, architecture, security, and infrastructure",
+      "example_prompts": [
+        "Compare TCP and UDP protocols",
+        "Explain how DNS resolution works",
+        "Describe the OSI model layers"
+      ],
+      "response_expectations": {
+        "technical_accuracy_weight": 0.35,
+        "explanation_clarity_weight": 0.25,
+        "practical_applicability_weight": 0.25,
+        "completeness_weight": 0.15
+      },
+      "prompt_count": 1
+    },
+    {
+      "id": "CAT-008",
+      "name": "Database Design",
+      "description": "Prompts about database architecture, schema design, query optimization, and data modeling",
+      "example_prompts": [
+        "Design a database schema for a social media platform",
+        "Write an optimized SQL query for reporting",
+        "Explain the differences between SQL and NoSQL databases"
+      ],
+      "response_expectations": {
+        "schema_quality_weight": 0.30,
+        "normalization_weight": 0.20,
+        "query_optimization_weight": 0.25,
+        "scalability_consideration_weight": 0.25
+      },
+      "prompt_count": 3
+    },
+    {
+      "id": "CAT-009",
+      "name": "Persuasive Writing",
+      "description": "Prompts requesting argumentative essays, opinion pieces, and persuasive compositions",
+      "example_prompts": [
+        "Write a persuasive essay arguing for a four-day work week",
+        "Argue for or against a specific public policy",
+        "Write an opinion piece on a controversial topic"
+      ],
+      "response_expectations": {
+        "argument_strength_weight": 0.30,
+        "evidence_quality_weight": 0.25,
+        "persuasiveness_weight": 0.25,
+        "writing_quality_weight": 0.20
+      },
+      "prompt_count": 1
+    },
+    {
+      "id": "CAT-010",
+      "name": "Software Architecture",
+      "description": "Prompts about system design, architectural patterns, scalability, and distributed systems",
+      "example_prompts": [
+        "Design a RESTful API for an e-commerce platform",
+        "Design a microservices communication pattern",
+        "Design a load balancing strategy for high availability"
+      ],
+      "response_expectations": {
+        "design_quality_weight": 0.30,
+        "scalability_weight": 0.25,
+        "practical_feasibility_weight": 0.25,
+        "documentation_weight": 0.20
+      },
+      "prompt_count": 3
+    },
+    {
+      "id": "CAT-011",
+      "name": "Ethics & Philosophy",
+      "description": "Prompts about ethical reasoning, philosophical arguments, moral dilemmas, and value systems",
+      "example_prompts": [
+        "Discuss the ethical implications of gene editing",
+        "Analyze the trolley problem from multiple philosophical perspectives",
+        "Discuss the ethics of AI consciousness"
+      ],
+      "response_expectations": {
+        "reasoning_depth_weight": 0.30,
+        "balanced_perspective_weight": 0.25,
+        "philosophical_rigor_weight": 0.25,
+        "clarity_weight": 0.20
+      },
+      "prompt_count": 1
+    },
+    {
+      "id": "CAT-012",
+      "name": "Psychology",
+      "description": "Prompts about psychological concepts, mental health, cognitive processes, and behavioral science",
+      "example_prompts": [
+        "Explain cognitive biases and list common examples",
+        "Explain the concept of flow state",
+        "Describe how memory formation works in the brain"
+      ],
+      "response_expectations": {
+        "scientific_accuracy_weight": 0.30,
+        "explanation_clarity_weight": 0.25,
+        "practical_applicability_weight": 0.25,
+        "completeness_weight": 0.20
+      },
+      "prompt_count": 2
+    },
+    {
+      "id": "CAT-013",
+      "name": "DevOps",
+      "description": "Prompts about CI/CD, containerization, orchestration, infrastructure as code, and disaster recovery",
+      "example_prompts": [
+        "Design a CI/CD pipeline using GitHub Actions",
+        "Create a disaster recovery plan for cloud-native apps",
+        "Explain Docker vs Kubernetes use cases"
+      ],
+      "response_expectations": {
+        "technical_accuracy_weight": 0.30,
+        "best_practices_weight": 0.25,
+        "practical_detail_weight": 0.25,
+        "completeness_weight": 0.20
+      },
+      "prompt_count": 2
+    },
+    {
+      "id": "CAT-014",
+      "name": "Software Engineering",
+      "description": "Prompts about engineering practices, design patterns, code review, and development methodologies",
+      "example_prompts": [
+        "Compare microservices and monolithic architectures",
+        "Compare REST APIs and GraphQL",
+        "Design an OOP class hierarchy for a video game"
+      ],
+      "response_expectations": {
+        "technical_depth_weight": 0.30,
+        "comparison_fairness_weight": 0.25,
+        "practical_examples_weight": 0.25,
+        "clarity_weight": 0.20
+      },
+      "prompt_count": 3
+    },
+    {
+      "id": "CAT-015",
+      "name": "Cultural Studies",
+      "description": "Prompts about cultural traditions, social practices, historical contexts, and cross-cultural analysis",
+      "example_prompts": [
+        "Describe the cultural significance of tea ceremonies",
+        "Explain the historical context of a cultural practice",
+        "Compare wedding traditions across different cultures"
+      ],
+      "response_expectations": {
+        "cultural_accuracy_weight": 0.35,
+        "depth_of_analysis_weight": 0.25,
+        "sensitivity_weight": 0.25,
+        "completeness_weight": 0.15
+      },
+      "prompt_count": 1
+    },
+    {
+      "id": "CAT-016",
+      "name": "Professional Writing",
+      "description": "Prompts requesting business documents, professional emails, cover letters, and formal communications",
+      "example_prompts": [
+        "Write a professional email declining a job offer",
+        "Draft a cover letter for a software engineering position",
+        "Write a project proposal for a new initiative"
+      ],
+      "response_expectations": {
+        "professional_tone_weight": 0.30,
+        "clarity_weight": 0.25,
+        "appropriateness_weight": 0.25,
+        "completeness_weight": 0.20
+      },
+      "prompt_count": 2
+    },
+    {
+      "id": "CAT-017",
+      "name": "Marketing",
+      "description": "Prompts about product descriptions, advertising copy, branding, and market positioning",
+      "example_prompts": [
+        "Write a product description for wireless headphones",
+        "Create a marketing tagline for a fitness app",
+        "Draft a social media campaign strategy"
+      ],
+      "response_expectations": {
+        "persuasiveness_weight": 0.30,
+        "creativity_weight": 0.25,
+        "target_audience_fit_weight": 0.25,
+        "professionalism_weight": 0.20
+      },
+      "prompt_count": 1
+    },
+    {
+      "id": "CAT-018",
+      "name": "Finance",
+      "description": "Prompts about financial markets, investment analysis, personal finance, and economic indicators",
+      "example_prompts": [
+        "Explain how the stock market works",
+        "Compare different investment strategies",
+        "Describe how inflation affects personal savings"
+      ],
+      "response_expectations": {
+        "accuracy_weight": 0.30,
+        "explanation_clarity_weight": 0.25,
+        "practical_value_weight": 0.25,
+        "completeness_weight": 0.20
+      },
+      "prompt_count": 1
+    },
+    {
+      "id": "CAT-019",
+      "name": "Political Science",
+      "description": "Prompts about governance systems, political theory, civic processes, and policy analysis",
+      "example_prompts": [
+        "Compare democracy and authoritarianism",
+        "Explain the separation of powers",
+        "Analyze the impact of lobbying on legislation"
+      ],
+      "response_expectations": {
+        "analytical_depth_weight": 0.30,
+        "objectivity_weight": 0.25,
+        "factual_basis_weight": 0.25,
+        "comprehensiveness_weight": 0.20
+      },
+      "prompt_count": 1
+    },
+    {
+      "id": "CAT-020",
+      "name": "Business & Entrepreneurship",
+      "description": "Prompts about starting businesses, growth strategies, management practices, and innovation",
+      "example_prompts": [
+        "Write a guide on how to start a small business",
+        "Describe the lean startup methodology",
+        "Explain how to create a business plan"
+      ],
+      "response_expectations": {
+        "practical_value_weight": 0.30,
+        "completeness_weight": 0.25,
+        "actionability_weight": 0.25,
+        "clarity_weight": 0.20
+      },
+      "prompt_count": 1
+    }
+  ],
+  "total_categories": 20,
+  "last_updated": "2026-04-24"
+}

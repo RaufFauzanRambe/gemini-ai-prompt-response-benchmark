@@ -1,0 +1,98 @@
+{
+  "dataset_info": {
+    "name": "Gemini AI Prompt-Response Benchmark",
+    "short_name": "GEMINI-PRB",
+    "version": "1.0.0",
+    "release_date": "2026-04-24",
+    "description": "A comprehensive benchmark dataset for evaluating the quality of Gemini AI prompt-response pairs across multiple categories, difficulty levels, and evaluation metrics. Includes raw data, processed splits, augmented prompts, human annotations, and cross-model comparisons.",
+    "languages": ["en"],
+    "license": "CC BY-SA 4.0",
+    "creators": [
+      {
+        "name": "Gemini Benchmark Team",
+        "affiliation": "AI Research Division",
+        "role": "Dataset Curation & Evaluation"
+      }
+    ],
+    "contact": "benchmark-team@airesearch.org"
+  },
+  "dataset_statistics": {
+    "total_prompts": 50,
+    "total_categories": 20,
+    "difficulty_distribution": {
+      "easy": 12,
+      "medium": 24,
+      "hard": 14
+    },
+    "split_distribution": {
+      "train": 35,
+      "validation": 10,
+      "test": 5
+    },
+    "augmented_prompts": 18,
+    "total_human_annotations": 30,
+    "annotators": 3,
+    "average_response_length_words": 1342,
+    "average_response_length_tokens": 1823
+  },
+  "data_format": {
+    "raw_data": {
+      "format": "JSON",
+      "file": "data/raw/gemini_raw.json",
+      "fields": ["id", "prompt", "category", "difficulty", "response", "metadata"]
+    },
+    "processed_data": {
+      "format": "CSV",
+      "files": ["data/processed/train.csv", "data/processed/validation.csv", "data/processed/test.csv"],
+      "fields": ["id", "prompt", "category", "difficulty", "response", "response_length", "quality_score", "split"]
+    },
+    "augmented_data": {
+      "format": "CSV",
+      "file": "data/augmented/paraphrased_prompts.csv",
+      "fields": ["original_prompt_id", "original_prompt", "paraphrased_prompt", "paraphrase_method", "similarity_score"]
+    }
+  },
+  "evaluation_methodology": {
+    "automated_metrics": ["BLEU", "ROUGE-1", "ROUGE-2", "ROUGE-L", "BERTScore", "Diversity (TTR, Distinct-n)", "Perplexity"],
+    "human_evaluation_dimensions": ["Relevance", "Coherence", "Factual Accuracy", "Completeness", "Creativity"],
+    "scoring_scale": "0-5 Likert scale",
+    "inter_annotator_agreement": {
+      "metric": "Fleiss' Kappa",
+      "target_minimum": 0.60,
+      "achieved": 0.72
+    },
+    "cross_model_comparison": {
+      "models_evaluated": ["gemini-1.5-pro", "gpt-4o", "claude-3.5-sonnet", "llama-3-70b"],
+      "comparison_method": "Side-by-side human evaluation with randomized ordering"
+    }
+  },
+  "quality_assurance": {
+    "data_collection_protocol": "Systematic prompt generation using templates with manual review",
+    "annotation_guidelines": "Detailed rubric provided to all annotators with calibration session",
+    "quality_checks": [
+      "Duplicate detection (semantic similarity threshold: 0.95)",
+      "Toxicity screening",
+      "PII removal",
+      "Response quality validation",
+      "Cross-validator agreement checks"
+    ],
+    "known_limitations": [
+      "English-only prompts and responses",
+      "Evaluation bias toward longer, more detailed responses",
+      "Limited representation of non-Western cultural contexts",
+      "Creative writing evaluation is inherently subjective",
+      "Technical accuracy verified by domain experts but may contain undetected errors"
+    ]
+  },
+  "recommended_usage": [
+    "Fine-tuning language models on high-quality prompt-response pairs",
+    "Benchmarking new AI models against Gemini baseline performance",
+    "Research on automated evaluation metrics for generative AI",
+    "Studying the relationship between prompt difficulty and response quality",
+    "Cross-model comparative analysis and leaderboard construction"
+  ],
+  "citation": {
+    "bibtex": "@dataset{gemini_prb_2026,\n  title={Gemini AI Prompt-Response Benchmark},\n  author={Gemini Benchmark Team},\n  year={2026},\n  publisher={AI Research Division},\n  version={1.0.0},\n  url={https://github.com/example/gemini-prb}\n}",
+    "apa": "Gemini Benchmark Team. (2026). Gemini AI Prompt-Response Benchmark (Version 1.0.0) [Dataset]. AI Research Division."
+  }
+}

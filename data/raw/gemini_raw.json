@@ -1,0 +1,1299 @@
+{
+  "dataset_name": "Gemini AI Prompt-Response Benchmark",
+  "version": "1.0.0",
+  "created_at": "2026-04-24",
+  "description": "Raw collected data for benchmarking Gemini AI prompt-response quality across multiple categories and difficulty levels",
+  "total_entries": 50,
+  "entries": [
+    {
+      "id": "RAW-001",
+      "prompt": "Explain the concept of quantum entanglement in simple terms that a high school student could understand.",
+      "category": "Science & Technology",
+      "difficulty": "easy",
+      "response": "Quantum entanglement is one of the most fascinating phenomena in physics. Imagine you have two particles that are linked together in a special way. When something happens to one particle, it instantly affects the other particle, no matter how far apart they are — even if they're on opposite sides of the universe. Albert Einstein famously called this 'spooky action at a distance' because it seemed so strange and impossible. Here's a simple analogy: think of a pair of gloves. If you put one glove in a box and send it to Mars, and keep the other in a box on Earth, the moment you open your box and see a left glove, you instantly know the one on Mars is a right glove. However, quantum entanglement is even stranger than this because in quantum mechanics, the particle doesn't actually 'decide' which state it's in until you observe it — and when you do, the other particle instantly 'knows' and adjusts accordingly.",
+      "metadata": {
+        "model": "gemini-1.5-pro",
+        "temperature": 0.7,
+        "max_tokens": 1024,
+        "latency_ms": 1234,
+        "timestamp": "2026-03-15T10:23:45Z"
+      }
+    },
+    {
+      "id": "RAW-002",
+      "prompt": "Write a Python function that implements the A* pathfinding algorithm with support for diagonal movement and custom heuristic functions.",
+      "category": "Programming",
+      "difficulty": "hard",
+      "response": "Here's a comprehensive implementation of the A* pathfinding algorithm in Python:\n\n```python\nimport heapq\nfrom typing import List, Tuple, Callable, Optional\nfrom math import sqrt\n\ndef a_star_pathfinding(\n    grid: List[List[int]],\n    start: Tuple[int, int],\n    goal: Tuple[int, int],\n    heuristic: Callable = None,\n    allow_diagonal: bool = True\n) -> Optional[List[Tuple[int, int]]]:\n    \"\"\"A* pathfinding with diagonal movement and custom heuristics.\n    \n    Args:\n        grid: 2D grid where 0 = walkable, 1 = obstacle\n        start: (row, col) starting position\n        goal: (row, col) target position\n        heuristic: Custom heuristic function (default: octile distance)\n        allow_diagonal: Whether diagonal movement is permitted\n    \n    Returns:\n        List of (row, col) tuples representing the path, or None\n    \"\"\"\n    rows, cols = len(grid), len(grid[0])\n    \n    def default_heuristic(a, b):\n        dx = abs(a[0] - b[0])\n        dy = abs(a[1] - b[1])\n        if allow_diagonal:\n            return max(dx, dy) + (sqrt(2) - 1) * min(dx, dy)\n        return dx + dy\n    \n    h = heuristic or default_heuristic\n    \n    open_set = [(h(start, goal), 0, start)]\n    came_from = {}\n    g_score = {start: 0}\n    f_score = {start: h(start, goal)}\n    closed_set = set()\n    \n    directions = [(-1,0),(1,0),(0,-1),(0,1)]\n    if allow_diagonal:\n        directions += [(-1,-1),(-1,1),(1,-1),(1,1)]\n    \n    while open_set:\n        _, current_g, current = heapq.heappop(open_set)\n        \n        if current == goal:\n            path = [current]\n            while current in came_from:\n                current = came_from[current]\n                path.append(current)\n            return path[::-1]\n        \n        if current in closed_set:\n            continue\n        closed_set.add(current)\n        \n        for dr, dc in directions:\n            neighbor = (current[0] + dr, current[1] + dc)\n            if not (0 <= neighbor[0] < rows and 0 <= neighbor[1] < cols):\n                continue\n            if grid[neighbor[0]][neighbor[1]] == 1:\n                continue\n            if neighbor in closed_set:\n                continue\n            \n            move_cost = sqrt(2) if (dr != 0 and dc != 0) else 1\n            tentative_g = g_score[current] + move_cost\n            \n            if tentative_g < g_score.get(neighbor, float('inf')):\n                came_from[neighbor] = current\n                g_score[neighbor] = tentative_g\n                f_score[neighbor] = tentative_g + h(neighbor, goal)\n                heapq.heappush(open_set, (f_score[neighbor], tentative_g, neighbor))\n    \n    return None\n```\n\nThis implementation includes type hints, configurable diagonal movement, and pluggable heuristic functions.",
+      "metadata": {
+        "model": "gemini-1.5-pro",
+        "temperature": 0.3,
+        "max_tokens": 2048,
+        "latency_ms": 3456,
+        "timestamp": "2026-03-15T10:24:12Z"
+      }
+    },
+    {
+      "id": "RAW-003",
+      "prompt": "Analyze the economic impact of artificial intelligence on the global labor market over the next decade, considering both job displacement and job creation.",
+      "category": "Economics & Business",
+      "difficulty": "medium",
+      "response": "The economic impact of artificial intelligence on the global labor market represents one of the most significant transformations since the Industrial Revolution. Over the next decade, AI is expected to reshape employment patterns across virtually every industry, creating a complex interplay between job displacement and job creation that will require careful policy navigation.\n\nOn the displacement side, research from McKinsey Global Institute suggests that up to 375 million workers worldwide may need to switch occupational categories by 2030 due to automation. Roles most vulnerable include routine cognitive tasks such as data entry, basic accounting, customer service, and certain manufacturing positions. However, the displacement is not uniform — it tends to affect specific task components rather than entire jobs, meaning many occupations will be transformed rather than eliminated.\n\nConversely, AI is projected to create substantial new employment opportunities. The World Economic Forum estimates that while 85 million jobs may be displaced, 97 million new roles could emerge. These include AI and machine learning specialists, data scientists, robotics engineers, AI ethicists, prompt engineers, and positions in AI-augmented healthcare, education, and creative industries. Additionally, AI will create entirely new categories of work that don't yet exist, much like the internet created roles that were unimaginable in 1990.\n\nThe net economic effect is likely positive but unevenly distributed. Developed economies with strong tech sectors may see significant GDP growth — Goldman Sachs estimates AI could boost global GDP by 7% ($7 trillion) by 2033. However, developing nations that rely on labor arbitrage may face challenges as AI reduces the cost advantage of outsourcing. The key challenge for policymakers will be managing the transition through retraining programs, social safety nets, and education reform.",
+      "metadata": {
+        "model": "gemini-1.5-pro",
+        "temperature": 0.7,
+        "max_tokens": 2048,
+        "latency_ms": 4521,
+        "timestamp": "2026-03-15T10:25:30Z"
+      }
+    },
+    {
+      "id": "RAW-004",
+      "prompt": "Compose a haiku about the changing of seasons from winter to spring.",
+      "category": "Creative Writing",
+      "difficulty": "easy",
+      "response": "Frost melts from the branch,\nGreen shoots push through waking earth —\nSpring breathes life anew.",
+      "metadata": {
+        "model": "gemini-1.5-pro",
+        "temperature": 0.9,
+        "max_tokens": 256,
+        "latency_ms": 567,
+        "timestamp": "2026-03-15T10:26:01Z"
+      }
+    },
+    {
+      "id": "RAW-005",
+      "prompt": "Derive the mathematical formula for the gradient of a multi-variable function and explain its geometric interpretation in the context of neural network optimization.",
+      "category": "Mathematics",
+      "difficulty": "hard",
+      "response": "The gradient of a multi-variable function is a fundamental concept that bridges calculus, linear algebra, and optimization — the backbone of neural network training. Let me present a rigorous derivation and its geometric interpretation.\n\n## Mathematical Derivation\n\nConsider a scalar-valued function f: R^n → R. For a function of n variables f(x_1, x_2, ..., x_n), the gradient is defined as the vector of all partial derivatives:\n\n∇f(x) = [∂f/∂x_1, ∂f/∂x_2, ..., ∂f/∂x_n]^T\n\nFormally, the i-th component is defined as:\n∂f/∂x_i = lim_{h→0} [f(x_1,...,x_i+h,...,x_n) - f(x_1,...,x_i,...,x_n)] / h\n\n## Geometric Interpretation\n\nThe gradient ∇f(x) at a point x has several key geometric properties:\n\n1. **Direction of Steepest Ascent**: ∇f(x) points in the direction of the maximum rate of increase of f at point x. The magnitude |∇f(x)| equals that maximum rate.\n\n2. **Orthogonality to Level Surfaces**: The gradient is always perpendicular to the level surface (contour) of f passing through x. This means ∇f(x) ⊥ {y : f(y) = f(x)}.\n\n## Application to Neural Network Optimization\n\nIn neural networks, we define a loss function L(θ) where θ represents all network parameters (weights and biases). Gradient descent updates parameters as:\nθ_{t+1} = θ_t - α∇L(θ_t)\n\nwhere α is the learning rate. The negative gradient -∇L(θ_t) points in the direction of steepest descent of the loss landscape, meaning each step reduces the loss as quickly as possible given the local curvature. This is why the gradient is the workhorse of backpropagation and modern deep learning optimization.",
+      "metadata": {
+        "model": "gemini-1.5-pro",
+        "temperature": 0.5,
+        "max_tokens": 2048,
+        "latency_ms": 2890,
+        "timestamp": "2026-03-15T10:27:15Z"
+      }
+    },
+    {
+      "id": "RAW-006",
+      "prompt": "Translate the following English proverb into French, Spanish, Japanese, and Arabic, then explain the cultural context of each translation.",
+      "category": "Translation & Linguistics",
+      "difficulty": "medium",
+      "response": "Let's work with the proverb: 'The early bird catches the worm.'\n\n**French:** 'L'avenir appartient à ceux qui se lèvent tôt.' (Literally: 'The future belongs to those who rise early.') This version shifts from catching worms to future ownership, reflecting French cultural emphasis on ambition and long-term planning.\n\n**Spanish:** 'El que madruga, Dios le ayuda.' (Literally: 'He who wakes early, God helps him.') The Spanish version adds a religious dimension, reflecting the cultural importance of divine providence in Hispanic societies.\n\n**Japanese:** '早起きは三文の得' (Hayaki wa sanmon no toku - 'Waking early brings three mon of profit.') This references the old Japanese currency unit 'mon,' showing the practical, financially-minded nature of the proverb in Japanese culture where 'three mon' historically represented a modest but real gain.\n\n**Arabic:** 'البركة في البكور' (Al-baraka fi al-bukur - 'Blessing is in the early morning.') This version uses the concept of 'baraka' (blessing/divine grace), which is central to Islamic and Arabic-speaking cultures, connecting diligence with spiritual favor.",
+      "metadata": {
+        "model": "gemini-1.5-pro",
+        "temperature": 0.7,
+        "max_tokens": 1024,
+        "latency_ms": 1876,
+        "timestamp": "2026-03-15T10:28:42Z"
+      }
+    },
+    {
+      "id": "RAW-007",
+      "prompt": "What are the main differences between TCP and UDP protocols, and when would you choose one over the other?",
+      "category": "Computer Networking",
+      "difficulty": "medium",
+      "response": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are the two primary transport layer protocols in the Internet Protocol suite, each designed for fundamentally different use cases.\n\n**TCP** is a connection-oriented, reliable protocol. It establishes a connection through a three-way handshake, guarantees ordered delivery of data, implements flow control to prevent overwhelming the receiver, and provides error detection and automatic retransmission of lost packets. This reliability comes at the cost of higher latency and overhead. Use TCP when data integrity is critical: web browsing (HTTP/HTTPS), email (SMTP, IMAP), file transfers (FTP, SFTP), database connections, and any application where every byte must arrive correctly and in order.\n\n**UDP** is a connectionless, lightweight protocol. It sends datagrams without establishing a connection, provides no guarantee of delivery or ordering, and has minimal overhead. This makes it significantly faster and more efficient for time-sensitive applications. Use UDP when speed matters more than perfect reliability: real-time video streaming, online gaming (where a dropped frame is better than a delayed one), DNS lookups, VoIP, and IoT sensor data.\n\nThe key tradeoff is reliability versus latency. TCP's congestion control and retransmission mechanisms introduce head-of-line blocking — a single dropped packet delays all subsequent data. UDP avoids this entirely, making it the preferred choice for low-latency applications.",
+      "metadata": {
+        "model": "gemini-1.5-pro",
+        "temperature": 0.5,
+        "max_tokens": 1024,
+        "latency_ms": 2100,
+        "timestamp": "2026-03-15T10:29:55Z"
+      }
+    },
+    {
+      "id": "RAW-008",
+      "prompt": "Design a database schema for a social media platform that supports posts, comments, likes, follows, and direct messages with optimal query performance.",
+      "category": "Database Design",
+      "difficulty": "hard",
+      "response": "Here's a comprehensive database schema designed for scalability and performance:\n\n**Core Tables:**\n1. `users` (id UUID PK, username VARCHAR UNIQUE, email VARCHAR UNIQUE, display_name VARCHAR, bio TEXT, avatar_url VARCHAR, created_at TIMESTAMP, updated_at TIMESTAMP)\n2. `posts` (id UUID PK, user_id UUID FK→users, content TEXT, media_urls JSONB, created_at TIMESTAMP, updated_at TIMESTAMP, is_deleted BOOLEAN DEFAULT false)\n3. `comments` (id UUID PK, post_id UUID FK→posts, user_id UUID FK→users, parent_comment_id UUID FK→comments NULL, content TEXT, created_at TIMESTAMP)\n4. `likes` (user_id UUID FK→users, target_id UUID, target_type ENUM('post','comment'), created_at TIMESTAMP, PRIMARY KEY(user_id, target_id, target_type))\n5. `follows` (follower_id UUID FK→users, followee_id UUID FK→users, created_at TIMESTAMP, PRIMARY KEY(follower_id, followee_id))\n6. `direct_messages` (id UUID PK, sender_id UUID FK→users, receiver_id UUID FK→users, content TEXT, is_read BOOLEAN DEFAULT false, created_at TIMESTAMP)\n\n**Indexes for Performance:**\n- posts: (user_id, created_at DESC) for profile feeds, (created_at DESC) for global feed\n- comments: (post_id, created_at ASC) for chronological comment loading\n- follows: (followee_id) for follower lookups, (follower_id) for following lists\n- direct_messages: (sender_id, receiver_id, created_at DESC) for conversation history\n\n**Optimization Notes:**\n- Use UUIDs for distributed-friendly primary keys\n- JSONB for media URLs allows flexible attachment of multiple media types\n- Composite primary keys on junction tables (likes, follows) prevent duplicates naturally\n- Consider denormalized counters on posts (like_count, comment_count) updated via background jobs\n- For massive scale, partition direct_messages by receiver_id and consider time-series partitioning for posts",
+      "metadata": {
+        "model": "gemini-1.5-pro",
+        "temperature": 0.3,
+        "max_tokens": 2048,
+        "latency_ms": 3890,
+        "timestamp": "2026-03-15T10:31:20Z"
+      }
+    },
+    {
+      "id": "RAW-009",
+      "prompt": "Explain the greenhouse effect and how human activities contribute to global warming.",
+      "category": "Science & Technology",
+      "difficulty": "easy",
+      "response": "The greenhouse effect is a natural process that warms the Earth's surface. When the Sun's energy reaches the Earth's atmosphere, some of it is reflected back to space and the rest is absorbed by the land and oceans, heating the planet. The absorbed energy is then radiated back upward as infrared heat. Greenhouse gases in the atmosphere — including water vapor, carbon dioxide (CO2), methane, and nitrous oxide — trap some of this heat, preventing it from escaping into space, much like glass walls of a greenhouse trap heat inside.\n\nThis natural greenhouse effect is essential for life on Earth; without it, our planet would be about 33 degrees Celsius colder. However, human activities have dramatically intensified this effect since the Industrial Revolution. Burning fossil fuels (coal, oil, and natural gas) for energy and transportation releases enormous amounts of CO2. Deforestation reduces the number of trees available to absorb CO2. Agriculture and livestock produce methane, a greenhouse gas about 25 times more potent than CO2 over a 100-year period. Industrial processes release various greenhouse gases and fluorinated gases.\n\nThe result is an enhanced greenhouse effect: the atmospheric concentration of CO2 has risen from about 280 parts per million (ppm) in pre-industrial times to over 420 ppm today — the highest level in at least 800,000 years. This trapping of additional heat leads to rising global temperatures, melting ice caps, rising sea levels, more extreme weather events, and disruption of ecosystems worldwide.",
+      "metadata": {
+        "model": "gemini-1.5-pro",
+        "temperature": 0.7,
+        "max_tokens": 1024,
+        "latency_ms": 1678,
+        "timestamp": "2026-03-15T10:32:45Z"
+      }
+    },
+    {
+      "id": "RAW-010",
+      "prompt": "Write a persuasive essay arguing for or against the implementation of a four-day work week.",
+      "category": "Persuasive Writing",
+      "difficulty": "medium",
+      "response": "The four-day work week is not a radical idea — it is an overdue evolution of how we think about productivity, well-being, and the very purpose of work. The evidence from numerous pilot programs worldwide overwhelmingly supports transitioning to a shorter work week, and it is time for governments and corporations to make this the new standard.\n\nThe most compelling argument comes from real-world results. Iceland conducted the world's largest trial of a four-day work week between 2015 and 2019, involving over 2,500 workers across various sectors. The results were remarkable: productivity either maintained or improved across the majority of workplaces, while worker well-being rose dramatically. The UK's 2022 pilot involving 61 companies similarly found that 92% of participating firms chose to continue the four-day week after the trial, with revenue remaining broadly unchanged while employee burnout decreased by 71% and staff turnover fell by 57%.\n\nCritics argue that a shorter work week would harm competitiveness and reduce output. However, this view is rooted in the outdated assumption that hours worked equals value produced. Parkinson's Law tells us that work expands to fill the time available. When given fewer hours, employees focus on high-impact tasks, reduce unnecessary meetings, and eliminate time-wasting activities. Microsoft Japan's 2019 experiment saw a 40% productivity boost when switching to a four-day week.\n\nThe environmental benefits are equally significant. A 20% reduction in commuting translates to lower carbon emissions, reduced traffic congestion, and decreased energy consumption in office buildings. In an era of climate crisis, this is not a trivial consideration.\n\nThe four-day work week represents a rare policy intervention that benefits employers, employees, and society simultaneously. It improves mental health, strengthens families, boosts productivity, and helps the environment. The question is no longer whether we should adopt it, but how quickly we can make it happen.",
+      "metadata": {
+        "model": "gemini-1.5-pro",
+        "temperature": 0.7,
+        "max_tokens": 2048,
+        "latency_ms": 4102,
+        "timestamp": "2026-03-15T10:34:10Z"
+      }
+    },
+  {
+    "id": "RAW-012",
+    "prompt": "Explain the concept of overfitting in machine learning and how to prevent it.",
+    "category": "Artificial Intelligence",
+    "difficulty": "medium",
+    "response": "Overfitting occurs in machine learning when a model learns not only the underlying patterns in the training data but also the noise and random fluctuations. As a result, the model performs very well on training data but poorly on unseen data. This happens because the model becomes too complex and memorizes the dataset instead of generalizing from it. Common signs of overfitting include a large gap between training accuracy and validation accuracy. To prevent overfitting, several techniques can be applied: using more training data, simplifying the model, applying regularization methods such as L1 or L2, using dropout in neural networks, and implementing cross-validation. Another effective approach is early stopping, where training is halted once performance on validation data starts to degrade. The goal is to build a model that captures true patterns while remaining robust to new inputs.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 1024,
+      "latency_ms": 1980,
+      "timestamp": "2026-03-15T10:36:40Z"
+    }
+  },
+  {
+    "id": "RAW-013",
+    "prompt": "Compare supervised, unsupervised, and reinforcement learning with real-world examples.",
+    "category": "Artificial Intelligence",
+    "difficulty": "medium",
+    "response": "Supervised learning, unsupervised learning, and reinforcement learning are three fundamental paradigms in machine learning, each designed for different types of problems. Supervised learning uses labeled data, meaning the model is trained on input-output pairs. A common example is email spam detection, where emails are labeled as 'spam' or 'not spam'. Unsupervised learning, on the other hand, works with unlabeled data and aims to find hidden patterns or structures. An example is customer segmentation, where users are grouped based on behavior without predefined labels. Reinforcement learning involves an agent that learns by interacting with an environment and receiving rewards or penalties. A classic example is training an AI to play a game like chess or controlling a robot. Each approach has unique strengths, and in practice, modern AI systems often combine these techniques to solve complex real-world problems.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 1024,
+      "latency_ms": 2105,
+      "timestamp": "2026-03-15T10:37:55Z"
+    }
+  },
+  {
+    "id": "RAW-014",
+    "prompt": "Describe how blockchain technology works and its potential applications beyond cryptocurrency.",
+    "category": "Technology & Finance",
+    "difficulty": "medium",
+    "response": "Blockchain is a decentralized digital ledger that records transactions across a network of computers in a secure and transparent way. Each block contains a list of transactions and is linked to the previous block using cryptographic hashes, forming a chain. This structure makes it extremely difficult to alter past data without consensus from the network. While blockchain is widely known for powering cryptocurrencies like Bitcoin, its applications extend far beyond finance. It can be used in supply chain management to track goods, in healthcare to securely store patient records, in voting systems to ensure transparency, and in digital identity verification. Smart contracts, which are self-executing programs on the blockchain, further expand its capabilities by automating agreements without intermediaries. As the technology matures, blockchain has the potential to reshape industries by increasing trust, reducing fraud, and improving efficiency.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.65,
+      "max_tokens": 1024,
+      "latency_ms": 2300,
+      "timestamp": "2026-03-15T10:39:10Z"
+    }
+  },
+  {
+    "id": "RAW-015",
+    "prompt": "Discuss the importance of mental resilience for young people in the digital age.",
+    "category": "Psychology & Society",
+    "difficulty": "easy",
+    "response": "Mental resilience is the ability to adapt to challenges, recover from setbacks, and continue moving forward despite difficulties. In the digital age, young people face unique pressures, including social media comparison, information overload, and constant connectivity. These factors can increase stress, anxiety, and self-doubt. Building mental resilience is essential to navigate this environment effectively. It involves developing self-awareness, emotional regulation, and a growth mindset. Practices such as limiting screen time, engaging in physical activity, maintaining supportive relationships, and setting realistic goals can strengthen resilience. Additionally, learning to view failure as a learning opportunity rather than a setback helps young individuals build confidence and persistence. In a rapidly changing world, mental resilience is not just beneficial — it is a critical skill for long-term success and well-being.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.8,
+      "max_tokens": 1024,
+      "latency_ms": 1900,
+      "timestamp": "2026-03-15T10:40:25Z"
+    }
+  },
+  {
+    "id": "RAW-016",
+    "prompt": "Explain the concept of bias and variance in machine learning and the trade-off between them.",
+    "category": "Artificial Intelligence",
+    "difficulty": "hard",
+    "response": "Bias and variance are two fundamental sources of error in machine learning models. Bias refers to the error introduced by overly simplistic assumptions in the learning algorithm. A high-bias model tends to underfit the data, meaning it cannot capture the underlying patterns. Variance, on the other hand, refers to the model's sensitivity to small fluctuations in the training data. A high-variance model tends to overfit, capturing noise along with the signal. The bias-variance trade-off is the balance between these two: reducing bias often increases variance, and reducing variance often increases bias. The goal is to find a model complexity that minimizes total error. Techniques such as cross-validation, regularization, and ensemble methods are commonly used to manage this trade-off effectively.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.5,
+      "max_tokens": 1024,
+      "latency_ms": 2050,
+      "timestamp": "2026-03-15T10:41:40Z"
+    }
+  },
+  {
+    "id": "RAW-017",
+    "prompt": "How does the attention mechanism work in transformer models?",
+    "category": "Artificial Intelligence",
+    "difficulty": "hard",
+    "response": "The attention mechanism in transformer models allows the model to focus on different parts of the input sequence when generating an output. Instead of processing data sequentially like traditional recurrent models, transformers process all tokens in parallel and use attention to determine the importance of each token relative to others. This is achieved through three components: queries, keys, and values. Each token is transformed into these three vectors, and attention scores are computed by taking the dot product between queries and keys. These scores are then normalized using softmax and used to weight the values. The result is a weighted combination of information from all tokens, allowing the model to capture context more effectively. Multi-head attention extends this idea by using multiple attention layers in parallel, enabling the model to learn different types of relationships within the data.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.4,
+      "max_tokens": 2048,
+      "latency_ms": 2600,
+      "timestamp": "2026-03-15T10:42:55Z"
+    }
+  },
+  {
+    "id": "RAW-018",
+    "prompt": "What are the key principles of user-centered design (UCD)?",
+    "category": "Design & UX",
+    "difficulty": "easy",
+    "response": "User-centered design (UCD) is an approach that focuses on the needs, preferences, and limitations of end users throughout the design process. The key principles include understanding the users through research, involving them in the design process, and iterating based on feedback. Designers aim to create intuitive, accessible, and efficient experiences. This involves usability testing, prototyping, and continuous improvement. UCD ensures that products are not only functional but also meaningful and easy to use, ultimately improving user satisfaction and engagement.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 1024,
+      "latency_ms": 1800,
+      "timestamp": "2026-03-15T10:44:10Z"
+    }
+  },
+  {
+    "id": "RAW-019",
+    "prompt": "Explain the difference between correlation and causation with examples.",
+    "category": "Statistics",
+    "difficulty": "easy",
+    "response": "Correlation refers to a relationship or association between two variables, where they tend to change together. However, correlation does not imply causation, which means one variable directly causes the change in another. For example, ice cream sales and drowning incidents may be correlated because both increase during summer, but buying ice cream does not cause drowning. The underlying factor is the warmer weather. Understanding this distinction is crucial in data analysis to avoid misleading conclusions and incorrect decision-making.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 1024,
+      "latency_ms": 1750,
+      "timestamp": "2026-03-15T10:45:20Z"
+    }
+  },
+  {
+    "id": "RAW-020",
+    "prompt": "Discuss the ethical risks of artificial intelligence and how they can be mitigated.",
+    "category": "AI Ethics",
+    "difficulty": "medium",
+    "response": "Artificial intelligence presents several ethical risks, including bias in decision-making, lack of transparency, privacy concerns, and potential job displacement. Biased training data can lead to unfair outcomes, particularly in areas like hiring or law enforcement. Lack of explainability makes it difficult to understand how AI systems arrive at decisions, reducing trust. Privacy risks arise from large-scale data collection, while automation may disrupt labor markets. To mitigate these risks, organizations should implement fairness audits, use diverse and representative datasets, and adopt explainable AI techniques. Regulatory frameworks, ethical guidelines, and human oversight are also essential. By proactively addressing these challenges, AI can be developed in a way that benefits society while minimizing harm.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 1024,
+      "latency_ms": 2200,
+      "timestamp": "2026-03-15T10:46:35Z"
+    }
+  }, 
+  {
+    "id": "RAW-021",
+    "prompt": "Explain what a neural network is in simple terms.",
+    "category": "Artificial Intelligence",
+    "difficulty": "easy",
+    "response": "A neural network is a type of computer system inspired by the human brain. It consists of layers of connected nodes, called neurons, that process information. Each connection has a weight that adjusts as the network learns. By passing data through these layers, the network can recognize patterns, make predictions, and solve problems such as image recognition or language translation.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 512,
+      "latency_ms": 1500,
+      "timestamp": "2026-03-15T10:47:50Z"
+    }
+  },
+  {
+    "id": "RAW-022",
+    "prompt": "What is the difference between classification and regression in machine learning?",
+    "category": "Artificial Intelligence",
+    "difficulty": "easy",
+    "response": "Classification and regression are two types of supervised learning. Classification predicts discrete labels or categories, such as whether an email is spam or not. Regression predicts continuous values, such as house prices or temperature. The main difference lies in the type of output: classification deals with categories, while regression deals with numerical values.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 512,
+      "latency_ms": 1600,
+      "timestamp": "2026-03-15T10:48:55Z"
+    }
+  },
+  {
+    "id": "RAW-023",
+    "prompt": "Explain the concept of Big O notation and why it matters.",
+    "category": "Computer Science",
+    "difficulty": "medium",
+    "response": "Big O notation describes the efficiency of an algorithm in terms of time or space complexity as the input size grows. It focuses on the worst-case scenario and helps developers understand how an algorithm will scale. For example, O(n) means linear growth, while O(n^2) means quadratic growth. This is important because it allows developers to choose more efficient algorithms and build scalable systems.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.5,
+      "max_tokens": 1024,
+      "latency_ms": 1800,
+      "timestamp": "2026-03-15T10:50:10Z"
+    }
+  },
+  {
+    "id": "RAW-024",
+    "prompt": "Describe how a recommendation system works.",
+    "category": "Artificial Intelligence",
+    "difficulty": "medium",
+    "response": "A recommendation system suggests items to users based on their preferences and behavior. It typically uses techniques such as collaborative filtering, which analyzes user interactions, and content-based filtering, which recommends items similar to those a user liked before. Modern systems often combine both methods and use machine learning models to improve accuracy over time.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 1024,
+      "latency_ms": 2000,
+      "timestamp": "2026-03-15T10:51:20Z"
+    }
+  },
+  {
+    "id": "RAW-025",
+    "prompt": "What is cloud computing and why is it important?",
+    "category": "Technology",
+    "difficulty": "easy",
+    "response": "Cloud computing is the delivery of computing services such as storage, processing, and networking over the internet. Instead of owning physical hardware, users can access resources on demand from providers like AWS or Google Cloud. It is important because it offers scalability, cost efficiency, and flexibility for businesses and developers.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 512,
+      "latency_ms": 1400,
+      "timestamp": "2026-03-15T10:52:35Z"
+    }
+  },
+  {
+    "id": "RAW-026",
+    "prompt": "Explain the concept of recursion with an example.",
+    "category": "Programming",
+    "difficulty": "medium",
+    "response": "Recursion is a programming technique where a function calls itself to solve a problem. It breaks a complex problem into smaller subproblems of the same type. A classic example is calculating factorial: n! = n × (n-1)! with a base case of 1! = 1. Recursion is powerful but must be used carefully to avoid infinite loops and excessive memory usage.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.5,
+      "max_tokens": 1024,
+      "latency_ms": 1700,
+      "timestamp": "2026-03-15T10:53:40Z"
+    }
+  },
+  {
+    "id": "RAW-027",
+    "prompt": "What are APIs and how do they work?",
+    "category": "Software Engineering",
+    "difficulty": "easy",
+    "response": "An API (Application Programming Interface) allows different software systems to communicate with each other. It defines a set of rules and endpoints that developers can use to request and exchange data. For example, a weather app might use an API to fetch real-time weather data from a server.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 512,
+      "latency_ms": 1300,
+      "timestamp": "2026-03-15T10:54:55Z"
+    }
+  },
+  {
+    "id": "RAW-028",
+    "prompt": "Explain the difference between frontend and backend development.",
+    "category": "Web Development",
+    "difficulty": "easy",
+    "response": "Frontend development focuses on the user interface and experience, including what users see and interact with in a browser. Backend development handles the server, database, and application logic behind the scenes. Both work together to create a complete web application.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 512,
+      "latency_ms": 1200,
+      "timestamp": "2026-03-15T10:56:05Z"
+    }
+  },
+  {
+    "id": "RAW-029",
+    "prompt": "What is cybersecurity and why is it critical today?",
+    "category": "Cybersecurity",
+    "difficulty": "easy",
+    "response": "Cybersecurity is the practice of protecting systems, networks, and data from digital attacks. It is critical today because of the increasing reliance on digital technologies and the rise of cyber threats such as hacking, data breaches, and ransomware. Strong cybersecurity measures help protect sensitive information and maintain trust.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 512,
+      "latency_ms": 1400,
+      "timestamp": "2026-03-15T10:57:20Z"
+    }
+  },
+  {
+    "id": "RAW-030",
+    "prompt": "Explain what data structures are and give examples.",
+    "category": "Computer Science",
+    "difficulty": "easy",
+    "response": "Data structures are ways of organizing and storing data so it can be accessed and modified efficiently. Common examples include arrays, linked lists, stacks, queues, and trees. Choosing the right data structure is important for building efficient algorithms and applications.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 512,
+      "latency_ms": 1350,
+      "timestamp": "2026-03-15T10:58:35Z"
+    }
+  },
+  {
+    "id": "RAW-031",
+    "prompt": "What is DevOps and why do companies use it?",
+    "category": "Software Engineering",
+    "difficulty": "medium",
+    "response": "DevOps is a set of practices that combines software development and IT operations to improve collaboration and efficiency. It emphasizes automation, continuous integration, and continuous delivery. Companies use DevOps to deploy software faster, reduce errors, and improve system reliability.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.5,
+      "max_tokens": 1024,
+      "latency_ms": 1750,
+      "timestamp": "2026-03-15T11:00:00Z"
+    }
+  },
+  {
+    "id": "RAW-032",
+    "prompt": "Explain what edge computing is.",
+    "category": "Technology",
+    "difficulty": "medium",
+    "response": "Edge computing is a distributed computing approach where data processing occurs closer to the source of data rather than in centralized cloud servers. This reduces latency and improves performance, especially for real-time applications like IoT devices and autonomous systems.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 1024,
+      "latency_ms": 1900,
+      "timestamp": "2026-03-15T11:01:10Z"
+    }
+  },
+  {
+    "id": "RAW-033",
+    "prompt": "What is the Internet of Things (IoT)?",
+    "category": "Technology",
+    "difficulty": "easy",
+    "response": "The Internet of Things (IoT) refers to a network of physical devices connected to the internet that can collect and exchange data. Examples include smart home devices, wearable fitness trackers, and connected vehicles. IoT enables automation and smarter decision-making.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 512,
+      "latency_ms": 1500,
+      "timestamp": "2026-03-15T11:02:20Z"
+    }
+  },
+  {
+    "id": "RAW-034",
+    "prompt": "Explain how search engines work.",
+    "category": "Technology",
+    "difficulty": "medium",
+    "response": "Search engines work by crawling the web using bots, indexing the collected data, and ranking results based on relevance. When a user enters a query, the search engine retrieves relevant pages from its index and ranks them using algorithms that consider factors like keywords, backlinks, and user experience.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.5,
+      "max_tokens": 1024,
+      "latency_ms": 2100,
+      "timestamp": "2026-03-15T11:03:35Z"
+    }
+  },
+  {
+    "id": "RAW-035",
+    "prompt": "What is virtualization in computing?",
+    "category": "Technology",
+    "difficulty": "medium",
+    "response": "Virtualization is the creation of virtual versions of physical resources such as servers, storage, or networks. It allows multiple virtual machines to run on a single physical system, improving resource utilization and flexibility. It is widely used in cloud computing environments.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 1024,
+      "latency_ms": 1950,
+      "timestamp": "2026-03-15T11:04:50Z"
+    }
+  },
+  {
+    "id": "RAW-036",
+    "prompt": "Explain the concept of digital transformation.",
+    "category": "Business & Technology",
+    "difficulty": "medium",
+    "response": "Digital transformation is the integration of digital technologies into all areas of a business, fundamentally changing how it operates and delivers value to customers. It involves adopting new tools, improving processes, and embracing innovation to stay competitive in a digital world.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 1024,
+      "latency_ms": 2000,
+      "timestamp": "2026-03-15T11:06:05Z"
+    }
+  },
+  {
+    "id": "RAW-037",
+    "prompt": "What is augmented reality (AR) and how is it used?",
+    "category": "Technology",
+    "difficulty": "easy",
+    "response": "Augmented reality (AR) overlays digital information onto the real world using devices like smartphones or AR glasses. It is used in gaming, education, retail, and navigation. For example, AR apps can show how furniture would look in your home before buying it.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 512,
+      "latency_ms": 1400,
+      "timestamp": "2026-03-15T11:07:20Z"
+    }
+  },
+  {
+    "id": "RAW-038",
+    "prompt": "Explain the difference between AI, machine learning, and deep learning.",
+    "category": "Artificial Intelligence",
+    "difficulty": "medium",
+    "response": "Artificial intelligence (AI) is the broad field of creating machines that can perform tasks requiring human intelligence. Machine learning (ML) is a subset of AI that focuses on algorithms that learn from data. Deep learning is a subset of ML that uses neural networks with many layers to model complex patterns. In short, deep learning is part of machine learning, which is part of AI.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 1024,
+      "latency_ms": 1850,
+      "timestamp": "2026-03-15T11:08:35Z"
+    }
+  },
+  {
+    "id": "RAW-039",
+    "prompt": "What is a data pipeline?",
+    "category": "Data Engineering",
+    "difficulty": "medium",
+    "response": "A data pipeline is a system that moves data from one place to another and transforms it along the way. It typically includes data collection, processing, storage, and analysis stages. Data pipelines are essential for handling large-scale data and powering analytics and machine learning systems.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.5,
+      "max_tokens": 1024,
+      "latency_ms": 1900,
+      "timestamp": "2026-03-15T11:09:50Z"
+    }
+  },
+  {
+    "id": "RAW-040",
+    "prompt": "Explain why critical thinking is important in the age of AI.",
+    "category": "Education & Society",
+    "difficulty": "easy",
+    "response": "Critical thinking is essential in the age of AI because it helps individuals evaluate information, identify biases, and make informed decisions. With the rise of automated systems and vast amounts of data, people must be able to question outputs, verify sources, and think independently. This skill ensures that humans remain in control and use AI responsibly.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.8,
+      "max_tokens": 512,
+      "latency_ms": 1600,
+      "timestamp": "2026-03-15T11:11:05Z"
+    }
+  },
+  {
+    "id": "RAW-041",
+    "prompt": "Explain what a hash function is and why it is important in cybersecurity.",
+    "category": "Cybersecurity",
+    "difficulty": "medium",
+    "response": "A hash function is a mathematical algorithm that converts input data into a fixed-length string of characters, typically a hash value. It is important in cybersecurity because it ensures data integrity and is used in password storage, digital signatures, and data verification. A good hash function is deterministic, fast, and resistant to collisions.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 800,
+      "latency_ms": 1600,
+      "timestamp": "2026-03-15T11:12:10Z"
+    }
+  },
+  {
+    "id": "RAW-042",
+    "prompt": "What is the difference between HTTP and HTTPS?",
+    "category": "Web Technology",
+    "difficulty": "easy",
+    "response": "HTTP is a protocol used for transferring data over the web, while HTTPS is the secure version that uses encryption via SSL/TLS. HTTPS ensures that data transmitted between the user and the server is encrypted and protected from interception.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 500,
+      "latency_ms": 1300,
+      "timestamp": "2026-03-15T11:13:20Z"
+    }
+  },
+  {
+    "id": "RAW-043",
+    "prompt": "Explain the concept of normalization in databases.",
+    "category": "Database",
+    "difficulty": "medium",
+    "response": "Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. It involves dividing large tables into smaller ones and defining relationships between them. Common normal forms include 1NF, 2NF, and 3NF.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.5,
+      "max_tokens": 900,
+      "latency_ms": 1700,
+      "timestamp": "2026-03-15T11:14:35Z"
+    }
+  },
+  {
+    "id": "RAW-044",
+    "prompt": "What is latency and why does it matter in networks?",
+    "category": "Networking",
+    "difficulty": "easy",
+    "response": "Latency is the time it takes for data to travel from one point to another in a network. It matters because high latency can cause delays in communication, affecting applications like gaming, video calls, and real-time systems.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 500,
+      "latency_ms": 1400,
+      "timestamp": "2026-03-15T11:15:50Z"
+    }
+  },
+  {
+    "id": "RAW-045",
+    "prompt": "Explain the concept of containers in software development.",
+    "category": "Software Engineering",
+    "difficulty": "medium",
+    "response": "Containers are lightweight, portable units that package an application and its dependencies together so it can run consistently across different environments. Technologies like Docker allow developers to build, ship, and run applications efficiently.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 900,
+      "latency_ms": 1800,
+      "timestamp": "2026-03-15T11:17:05Z"
+    }
+  },
+  {
+    "id": "RAW-046",
+    "prompt": "What is a distributed system?",
+    "category": "Computer Science",
+    "difficulty": "medium",
+    "response": "A distributed system is a collection of independent computers that work together as a single system. These systems communicate over a network and coordinate tasks to achieve a common goal, improving scalability and fault tolerance.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 900,
+      "latency_ms": 1750,
+      "timestamp": "2026-03-15T11:18:20Z"
+    }
+  },
+  {
+    "id": "RAW-047",
+    "prompt": "Explain the CAP theorem in distributed systems.",
+    "category": "Computer Science",
+    "difficulty": "hard",
+    "response": "The CAP theorem states that a distributed system can only guarantee two out of three properties: Consistency, Availability, and Partition Tolerance. Designers must make trade-offs depending on system requirements.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.5,
+      "max_tokens": 1200,
+      "latency_ms": 2000,
+      "timestamp": "2026-03-15T11:19:35Z"
+    }
+  },
+  {
+    "id": "RAW-048",
+    "prompt": "What is a microservices architecture?",
+    "category": "Software Engineering",
+    "difficulty": "medium",
+    "response": "Microservices architecture is a design approach where an application is built as a collection of small, independent services that communicate through APIs. Each service handles a specific function and can be developed and deployed independently.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 900,
+      "latency_ms": 1850,
+      "timestamp": "2026-03-15T11:20:50Z"
+    }
+  },
+  {
+    "id": "RAW-049",
+    "prompt": "Explain what version control is and why Git is popular.",
+    "category": "Software Engineering",
+    "difficulty": "easy",
+    "response": "Version control is a system that tracks changes to code over time. Git is popular because it is distributed, fast, and allows multiple developers to collaborate efficiently while maintaining a history of changes.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 500,
+      "latency_ms": 1300,
+      "timestamp": "2026-03-15T11:22:05Z"
+    }
+  },
+  {
+    "id": "RAW-050",
+    "prompt": "Explain the concept of concurrency vs parallelism.",
+    "category": "Computer Science",
+    "difficulty": "medium",
+    "response": "Concurrency is about managing multiple tasks at once, while parallelism is about executing multiple tasks simultaneously. Concurrency can exist on a single core, while parallelism requires multiple cores.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 800,
+      "latency_ms": 1500,
+      "timestamp": "2026-03-15T11:23:20Z"
+    }
+  },
+  {
+    "id": "RAW-051",
+    "prompt": "A train travels 60 km in 1 hour. What is its speed in m/s?",
+    "category": "Mathematics",
+    "difficulty": "easy",
+    "response": "To convert 60 km/h to m/s, multiply by 1000/3600. The result is approximately 16.67 m/s.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.3,
+      "max_tokens": 200,
+      "latency_ms": 900,
+      "timestamp": "2026-03-15T11:24:30Z"
+    }
+  },
+  {
+    "id": "RAW-052",
+    "prompt": "If a function f(x) = x^2, what is f(3)?",
+    "category": "Mathematics",
+    "difficulty": "easy",
+    "response": "Substitute x = 3 into the function: f(3) = 3^2 = 9.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.2,
+      "max_tokens": 100,
+      "latency_ms": 800,
+      "timestamp": "2026-03-15T11:25:20Z"
+    }
+  },
+  {
+    "id": "RAW-053",
+    "prompt": "Solve: 2x + 5 = 15",
+    "category": "Mathematics",
+    "difficulty": "easy",
+    "response": "Subtract 5 from both sides: 2x = 10. Divide by 2: x = 5.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.2,
+      "max_tokens": 150,
+      "latency_ms": 850,
+      "timestamp": "2026-03-15T11:26:10Z"
+    }
+  },
+  {
+    "id": "RAW-054",
+    "prompt": "Explain the Pythagorean theorem.",
+    "category": "Mathematics",
+    "difficulty": "easy",
+    "response": "The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.5,
+      "max_tokens": 400,
+      "latency_ms": 1000,
+      "timestamp": "2026-03-15T11:27:00Z"
+    }
+  },
+  {
+    "id": "RAW-055",
+    "prompt": "What is 15% of 200?",
+    "category": "Mathematics",
+    "difficulty": "easy",
+    "response": "15% of 200 is 30.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.2,
+      "max_tokens": 100,
+      "latency_ms": 700,
+      "timestamp": "2026-03-15T11:27:50Z"
+    }
+  },
+
+  {
+    "id": "RAW-056",
+    "prompt": "Explain the concept of supply and demand.",
+    "category": "Economics",
+    "difficulty": "easy",
+    "response": "Supply and demand describe how prices are determined in a market. When demand is high and supply is low, prices rise. When supply is high and demand is low, prices fall.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 500,
+      "latency_ms": 1300,
+      "timestamp": "2026-03-15T11:28:40Z"
+    }
+  },
+  {
+    "id": "RAW-057",
+    "prompt": "What is inflation?",
+    "category": "Economics",
+    "difficulty": "easy",
+    "response": "Inflation is the rate at which the general level of prices for goods and services rises, reducing purchasing power.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 400,
+      "latency_ms": 1200,
+      "timestamp": "2026-03-15T11:29:30Z"
+    }
+  },
+  {
+    "id": "RAW-058",
+    "prompt": "Explain opportunity cost with an example.",
+    "category": "Economics",
+    "difficulty": "medium",
+    "response": "Opportunity cost is the value of the next best alternative you give up when making a decision. For example, if you spend time studying instead of working, your opportunity cost is the income you could have earned.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 700,
+      "latency_ms": 1400,
+      "timestamp": "2026-03-15T11:30:20Z"
+    }
+  },
+
+  {
+    "id": "RAW-059",
+    "prompt": "Explain what leadership means in simple terms.",
+    "category": "Personal Development",
+    "difficulty": "easy",
+    "response": "Leadership is the ability to guide, influence, and inspire others toward achieving a common goal.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.8,
+      "max_tokens": 300,
+      "latency_ms": 1100,
+      "timestamp": "2026-03-15T11:31:10Z"
+    }
+  },
+  {
+    "id": "RAW-060",
+    "prompt": "Why is discipline important for success?",
+    "category": "Personal Development",
+    "difficulty": "easy",
+    "response": "Discipline helps individuals stay consistent, manage time effectively, and achieve long-term goals despite challenges or distractions.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.8,
+      "max_tokens": 300,
+      "latency_ms": 1100,
+      "timestamp": "2026-03-15T11:32:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-061",
+    "prompt": "Explain what a startup is.",
+    "category": "Business",
+    "difficulty": "easy",
+    "response": "A startup is a newly established business focused on developing a scalable product or service, often driven by innovation and technology.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 400,
+      "latency_ms": 1200,
+      "timestamp": "2026-03-15T11:33:00Z"
+    }
+  },
+  {
+    "id": "RAW-062",
+    "prompt": "What is a business model?",
+    "category": "Business",
+    "difficulty": "medium",
+    "response": "A business model describes how a company creates, delivers, and captures value. It outlines revenue streams, customer segments, and cost structures.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 700,
+      "latency_ms": 1400,
+      "timestamp": "2026-03-15T11:34:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-063",
+    "prompt": "Explain what sustainability means.",
+    "category": "Environment",
+    "difficulty": "easy",
+    "response": "Sustainability means meeting current needs without compromising the ability of future generations to meet their own needs.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 400,
+      "latency_ms": 1200,
+      "timestamp": "2026-03-15T11:35:00Z"
+    }
+  },
+  {
+    "id": "RAW-064",
+    "prompt": "What is renewable energy?",
+    "category": "Environment",
+    "difficulty": "easy",
+    "response": "Renewable energy comes from natural sources that are constantly replenished, such as solar, wind, and hydro power.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 400,
+      "latency_ms": 1200,
+      "timestamp": "2026-03-15T11:36:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-065",
+    "prompt": "Explain the concept of time management.",
+    "category": "Productivity",
+    "difficulty": "easy",
+    "response": "Time management is the process of planning and controlling how much time to spend on specific tasks to increase efficiency and productivity.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.8,
+      "max_tokens": 400,
+      "latency_ms": 1200,
+      "timestamp": "2026-03-15T11:37:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-066",
+    "prompt": "What is critical thinking?",
+    "category": "Education",
+    "difficulty": "easy",
+    "response": "Critical thinking is the ability to analyze information objectively and make reasoned judgments.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.8,
+      "max_tokens": 300,
+      "latency_ms": 1100,
+      "timestamp": "2026-03-15T11:38:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-067",
+    "prompt": "Explain what an algorithm is.",
+    "category": "Computer Science",
+    "difficulty": "easy",
+    "response": "An algorithm is a step-by-step procedure used to solve a problem or perform a task.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 300,
+      "latency_ms": 1000,
+      "timestamp": "2026-03-15T11:39:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-068",
+    "prompt": "What is artificial general intelligence (AGI)?",
+    "category": "Artificial Intelligence",
+    "difficulty": "medium",
+    "response": "AGI refers to a type of AI that can understand, learn, and apply knowledge across a wide range of tasks at a level comparable to human intelligence.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 600,
+      "latency_ms": 1400,
+      "timestamp": "2026-03-15T11:40:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-069",
+    "prompt": "Explain Moore’s Law.",
+    "category": "Technology",
+    "difficulty": "medium",
+    "response": "Moore’s Law states that the number of transistors on a microchip doubles approximately every two years, leading to increased computing power.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 500,
+      "latency_ms": 1300,
+      "timestamp": "2026-03-15T11:41:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-070",
+    "prompt": "What is quantum computing?",
+    "category": "Technology",
+    "difficulty": "medium",
+    "response": "Quantum computing uses quantum bits (qubits) that can exist in multiple states simultaneously, allowing complex computations to be performed more efficiently than classical computers.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 700,
+      "latency_ms": 1500,
+      "timestamp": "2026-03-15T11:42:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-071",
+    "prompt": "Explain the concept of digital privacy.",
+    "category": "Cybersecurity",
+    "difficulty": "medium",
+    "response": "Digital privacy refers to the protection of personal information online, including how data is collected, stored, and shared.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 600,
+      "latency_ms": 1400,
+      "timestamp": "2026-03-15T11:43:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-072",
+    "prompt": "What is a neural network layer?",
+    "category": "Artificial Intelligence",
+    "difficulty": "easy",
+    "response": "A neural network layer is a group of neurons that process input data and pass it to the next layer.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 300,
+      "latency_ms": 1000,
+      "timestamp": "2026-03-15T11:44:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-073",
+    "prompt": "Explain how GPS works.",
+    "category": "Technology",
+    "difficulty": "medium",
+    "response": "GPS works by using satellites that send signals to receivers on Earth. By calculating the time it takes for signals to arrive from multiple satellites, the receiver determines its location.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 700,
+      "latency_ms": 1500,
+      "timestamp": "2026-03-15T11:45:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-074",
+    "prompt": "What is machine bias?",
+    "category": "AI Ethics",
+    "difficulty": "medium",
+    "response": "Machine bias occurs when AI systems produce unfair outcomes due to biased training data or flawed algorithms.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 600,
+      "latency_ms": 1400,
+      "timestamp": "2026-03-15T11:46:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-075",
+    "prompt": "Explain the concept of innovation.",
+    "category": "Business",
+    "difficulty": "easy",
+    "response": "Innovation is the process of creating new ideas, products, or methods that add value.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.8,
+      "max_tokens": 300,
+      "latency_ms": 1100,
+      "timestamp": "2026-03-15T11:47:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-076",
+    "prompt": "What is emotional intelligence?",
+    "category": "Psychology",
+    "difficulty": "easy",
+    "response": "Emotional intelligence is the ability to understand, manage, and express emotions effectively.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.8,
+      "max_tokens": 300,
+      "latency_ms": 1100,
+      "timestamp": "2026-03-15T11:48:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-077",
+    "prompt": "Explain blockchain consensus mechanisms.",
+    "category": "Blockchain",
+    "difficulty": "hard",
+    "response": "Consensus mechanisms are protocols used in blockchain to agree on the validity of transactions. Examples include Proof of Work and Proof of Stake.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.5,
+      "max_tokens": 1200,
+      "latency_ms": 2000,
+      "timestamp": "2026-03-15T11:49:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-078",
+    "prompt": "What is a smart contract?",
+    "category": "Blockchain",
+    "difficulty": "medium",
+    "response": "A smart contract is a self-executing program stored on a blockchain that runs when predefined conditions are met.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 700,
+      "latency_ms": 1500,
+      "timestamp": "2026-03-15T11:50:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-079",
+    "prompt": "Explain the concept of remote work.",
+    "category": "Work & Society",
+    "difficulty": "easy",
+    "response": "Remote work allows employees to work outside a traditional office environment, often from home, using digital tools.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.8,
+      "max_tokens": 300,
+      "latency_ms": 1100,
+      "timestamp": "2026-03-15T11:51:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-080",
+    "prompt": "What is lifelong learning?",
+    "category": "Education",
+    "difficulty": "easy",
+    "response": "Lifelong learning is the continuous pursuit of knowledge and skills throughout a person’s life.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.8,
+      "max_tokens": 300,
+      "latency_ms": 1100,
+      "timestamp": "2026-03-15T11:52:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-081",
+    "prompt": "Explain the concept of resilience.",
+    "category": "Psychology",
+    "difficulty": "easy",
+    "response": "Resilience is the ability to recover quickly from difficulties and adapt to challenges.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.8,
+      "max_tokens": 300,
+      "latency_ms": 1100,
+      "timestamp": "2026-03-15T11:53:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-082",
+    "prompt": "What is a feedback loop?",
+    "category": "Systems Thinking",
+    "difficulty": "medium",
+    "response": "A feedback loop is a process where outputs of a system are fed back as inputs, influencing future behavior.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 700,
+      "latency_ms": 1400,
+      "timestamp": "2026-03-15T11:54:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-083",
+    "prompt": "Explain the concept of scalability.",
+    "category": "Technology",
+    "difficulty": "medium",
+    "response": "Scalability refers to a system's ability to handle increased load without compromising performance.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 700,
+      "latency_ms": 1400,
+      "timestamp": "2026-03-15T11:55:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-084",
+    "prompt": "What is data science?",
+    "category": "Data Science",
+    "difficulty": "easy",
+    "response": "Data science is the field of analyzing data to extract insights using statistics, programming, and machine learning.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 400,
+      "latency_ms": 1200,
+      "timestamp": "2026-03-15T11:56:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-085",
+    "prompt": "Explain what a model is in machine learning.",
+    "category": "Artificial Intelligence",
+    "difficulty": "easy",
+    "response": "A model in machine learning is a mathematical representation trained on data to make predictions or decisions.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 400,
+      "latency_ms": 1200,
+      "timestamp": "2026-03-15T11:57:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-086",
+    "prompt": "What is automation?",
+    "category": "Technology",
+    "difficulty": "easy",
+    "response": "Automation is the use of technology to perform tasks with minimal human intervention.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 400,
+      "latency_ms": 1200,
+      "timestamp": "2026-03-15T11:58:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-087",
+    "prompt": "Explain what innovation ecosystems are.",
+    "category": "Business",
+    "difficulty": "medium",
+    "response": "Innovation ecosystems are networks of organizations, people, and resources that interact to foster innovation.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 700,
+      "latency_ms": 1400,
+      "timestamp": "2026-03-15T11:59:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-088",
+    "prompt": "What is digital literacy?",
+    "category": "Education",
+    "difficulty": "easy",
+    "response": "Digital literacy is the ability to use digital technologies effectively and responsibly.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.8,
+      "max_tokens": 300,
+      "latency_ms": 1100,
+      "timestamp": "2026-03-15T12:00:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-089",
+    "prompt": "Explain what systems thinking is.",
+    "category": "Education",
+    "difficulty": "medium",
+    "response": "Systems thinking is an approach to understanding complex systems by examining relationships and interactions between components.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.6,
+      "max_tokens": 700,
+      "latency_ms": 1400,
+      "timestamp": "2026-03-15T12:01:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-090",
+    "prompt": "What is artificial intelligence?",
+    "category": "Artificial Intelligence",
+    "difficulty": "easy",
+    "response": "Artificial intelligence is the simulation of human intelligence in machines that can learn, reason, and make decisions.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.7,
+      "max_tokens": 400,
+      "latency_ms": 1200,
+      "timestamp": "2026-03-15T12:02:00Z"
+    }
+  },
+
+  {
+    "id": "RAW-091",
+    "prompt": "Why is adaptability important in the modern world?",
+    "category": "Personal Development",
+    "difficulty": "easy",
+    "response": "Adaptability is important because it allows individuals to adjust to change, learn new skills, and stay relevant in a rapidly evolving world.",
+    "metadata": {
+      "model": "gemini-1.5-pro",
+      "temperature": 0.8,
+      "max_tokens": 400,
+      "latency_ms": 1200,
+      "timestamp": "2026-03-15T12:03:00Z"
+    }
+  }
+]

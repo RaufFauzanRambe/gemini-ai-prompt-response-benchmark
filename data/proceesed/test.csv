@@ -1,0 +1,156 @@
+id,prompt,category,difficulty,response,response_length,quality_score
+RAW-046,What is a distributed system?,Computer Science,medium,A distributed system is a group of independent computers that communicate and coordinate their actions as a single system.,20,8.6
+RAW-047,Explain the CAP theorem in simple terms.,Computer Science,hard,The CAP theorem states that a distributed system can only guarantee two of three properties: consistency availability and partition tolerance.,22,8.2
+RAW-048,What is the purpose of an operating system?,Computer Science,easy,An operating system manages hardware resources and provides services for software applications.,14,8.8
+RAW-049,Explain the difference between RAM and ROM.,Computer Hardware,easy,RAM is temporary memory used while a system is running while ROM stores permanent instructions needed for booting.,20,8.7
+RAW-050,What is an API?,Software Engineering,easy,An API is a set of rules that allows different software systems to communicate with each other.,18,8.9
+RAW-051,Explain the concept of recursion.,Programming,medium,Recursion is a programming technique where a function calls itself to solve smaller parts of a problem.,20,8.5
+RAW-052,What is machine learning?,Artificial Intelligence,easy,Machine learning is a field of AI that allows systems to learn from data and improve performance without explicit programming.,22,9.0
+RAW-053,What is overfitting in machine learning?,Artificial Intelligence,medium,Overfitting occurs when a model learns noise in the training data instead of general patterns leading to poor performance on new data.,25,8.4
+RAW-054,Explain blockchain in simple terms.,Blockchain,easy,Blockchain is a decentralized digital ledger that records transactions securely across multiple computers.,16,8.6
+RAW-055,What is cloud computing?,Technology,easy,Cloud computing allows users to access computing resources like servers and storage over the internet instead of local machines.,21,8.8
+RAW-056,Explain the concept of supply and demand.,Economics,easy,Supply and demand describe how prices are determined based on availability of goods and consumer desire.,18,8.7
+RAW-057,What is inflation?,Economics,easy,Inflation is the increase in prices over time which reduces the purchasing power of money.,17,8.6
+RAW-058,Explain opportunity cost with an example.,Economics,medium,Opportunity cost is the value of the next best alternative given up such as choosing study over earning income.,22,8.3
+RAW-059,What is leadership?,Personal Development,easy,Leadership is the ability to guide and influence others toward achieving a shared goal.,15,8.9
+RAW-060,Why is discipline important?,Personal Development,easy,Discipline helps individuals stay consistent focused and committed to long term goals despite challenges.,18,9.1
+RAW-061,What is a startup?,Business,easy,A startup is a newly established company focused on developing innovative products or services with high growth potential.,19,8.8
+RAW-062,Explain what a business model is.,Business,medium,A business model describes how a company creates delivers and captures value including revenue streams and cost structures.,21,8.6
+RAW-063,What is sustainability?,Environment,easy,Sustainability means meeting current needs without compromising the ability of future generations to meet theirs.,18,8.9
+RAW-064,What is renewable energy?,Environment,easy,Renewable energy comes from natural sources like sunlight wind and water that are replenished over time.,19,8.7
+RAW-065,Explain time management.,Productivity,easy,Time management is the ability to plan and control how time is spent to improve efficiency and productivity.,20,8.8
+RAW-066,What is critical thinking?,Education,easy,Critical thinking is the ability to analyze information objectively and make reasoned judgments.,15,8.9
+RAW-067,What is an algorithm?,Computer Science,easy,An algorithm is a step by step procedure used to solve problems or perform tasks.,17,8.8
+RAW-068,What is artificial general intelligence?,Artificial Intelligence,medium,AGI refers to a type of AI that can perform any intellectual task that a human can do.,20,8.5
+RAW-069,Explain Moore's Law.,Technology,medium,Moores Law states that the number of transistors on a chip doubles approximately every two years increasing computing power.,22,8.4
+RAW-070,What is quantum computing?,Technology,medium,Quantum computing uses qubits that can exist in multiple states simultaneously allowing faster processing of complex problems.,20,8.6
+RAW-071,What is digital privacy?,Cybersecurity,medium,Digital privacy refers to the protection of personal data online including how it is collected stored and shared.,21,8.7
+RAW-072,What is a neural network layer?,Artificial Intelligence,easy,A neural network layer is a group of nodes that process inputs and pass outputs to the next layer.,18,8.6
+RAW-073,How does GPS work?,Technology,medium,GPS works by using signals from satellites to calculate a receiver position based on distance from multiple satellites.,21,8.5
+RAW-074,What is machine bias?,AI Ethics,medium,Machine bias occurs when AI systems produce unfair outcomes due to biased data or flawed algorithms.,18,8.3
+RAW-075,What is innovation?,Business,easy,Innovation is the process of creating new ideas products or methods that provide value.,16,8.9
+RAW-076,What is emotional intelligence?,Psychology,easy,Emotional intelligence is the ability to understand manage and express emotions effectively.,16,8.8
+RAW-077,Explain blockchain consensus.,Blockchain,hard,Blockchain consensus mechanisms ensure all nodes agree on transaction validity using methods like proof of work or proof of stake.,23,8.2
+RAW-078,What is a smart contract?,Blockchain,medium,A smart contract is a self executing program on a blockchain that runs when predefined conditions are met.,20,8.6
+RAW-079,What is remote work?,Work,easy,Remote work allows people to work outside traditional offices using digital communication tools.,17,8.8
+RAW-080,What is lifelong learning?,Education,easy,Lifelong learning is the continuous development of skills and knowledge throughout life.,15,8.9
+RAW-081,What is resilience?,Psychology,easy,Resilience is the ability to recover quickly from challenges and adapt to difficult situations.,17,8.8
+RAW-082,Explain feedback loops.,Systems Thinking,medium,A feedback loop is a process where outputs of a system are fed back as inputs influencing future behavior.,22,8.5
+RAW-083,What is scalability?,Technology,medium,Scalability is the ability of a system to handle increased workload without losing performance.,18,8.7
+RAW-084,What is data science?,Data Science,easy,Data science involves extracting insights from data using statistics programming and machine learning.,17,8.9
+RAW-085,What is a machine learning model?,Artificial Intelligence,easy,A machine learning model is a system trained on data to make predictions or decisions.,17,8.8
+RAW-086,What is automation?,Technology,easy,Automation is the use of technology to perform tasks with minimal human intervention.,15,8.9
+RAW-087,What are innovation ecosystems?,Business,medium,Innovation ecosystems are networks of organizations people and resources that collaborate to drive innovation.,20,8.5
+RAW-088,What is digital literacy?,Education,easy,Digital literacy is the ability to use digital tools effectively and responsibly.,14,8.9
+RAW-089,What is systems thinking?,Education,medium,Systems thinking is an approach that analyzes how different parts of a system interact and influence each other.,21,8.6
+RAW-090,What is artificial intelligence?,Artificial Intelligence,easy,Artificial intelligence is the simulation of human intelligence in machines that can learn and make decisions.,19,8.8
+RAW-091,Why is adaptability important?,Personal Development,easy,Adaptability allows individuals to adjust to change and remain effective in evolving environments.,17,9.0
+RAW-092,What is big data?,Data Science,easy,Big data refers to large complex datasets that require advanced tools to process and analyze.,17,8.7
+RAW-093,Explain edge computing.,Technology,medium,Edge computing processes data closer to the source rather than relying on centralized cloud systems reducing latency.,20,8.5
+RAW-094,What is IoT?,Technology,easy,The Internet of Things refers to interconnected devices that communicate and exchange data over the internet.,19,8.8
+RAW-095,Explain virtualization.,Computer Science,medium,Virtualization allows multiple virtual systems to run on a single physical machine improving efficiency and resource use.,21,8.4
+RAW-096,What is DevOps?,Software Engineering,medium,DevOps is a practice that combines development and operations to improve collaboration and accelerate software delivery.,21,8.6
+RAW-097,Explain phishing.,Cybersecurity,easy,Phishing is a cyber attack where attackers trick users into revealing sensitive information through fake messages.,19,8.8
+RAW-098,What is encryption?,Cybersecurity,easy,Encryption is the process of converting data into a secure format to prevent unauthorized access.,17,8.9
+RAW-099,Explain digital transformation.,Business,medium,Digital transformation is the integration of digital technology into all areas of a business changing how it operates.,22,8.6
+RAW-100,What is entrepreneurship?,Business,easy,Entrepreneurship is the process of starting and managing a business venture to make profit and solve problems.,18,8.8
+RAW-101,What is supervised learning?,Artificial Intelligence,easy,Supervised learning is a machine learning method where models are trained using labeled data to predict outcomes.,20,8.8
+RAW-102,What is unsupervised learning?,Artificial Intelligence,easy,Unsupervised learning finds patterns in data without labeled outputs such as clustering or dimensionality reduction.,19,8.7
+RAW-103,Explain reinforcement learning.,Artificial Intelligence,medium,Reinforcement learning is a method where an agent learns by interacting with an environment and receiving rewards or penalties.,22,8.5
+RAW-104,What is gradient descent?,Mathematics,medium,Gradient descent is an optimization algorithm used to minimize a function by iteratively moving in the direction of the negative gradient.,23,8.6
+RAW-105,Explain bias vs variance.,Artificial Intelligence,hard,Bias refers to error from overly simple models while variance refers to error from models that are too complex and sensitive to data.,24,8.3
+RAW-106,What is normalization in ML?,Artificial Intelligence,medium,Normalization scales input data to a standard range to improve model performance and stability.,18,8.7
+RAW-107,Explain feature engineering.,Data Science,medium,Feature engineering is the process of creating and selecting meaningful variables to improve model performance.,19,8.6
+RAW-108,What is a confusion matrix?,Data Science,medium,A confusion matrix is a table used to evaluate classification models by comparing predicted and actual values.,20,8.7
+RAW-109,What is precision vs recall?,Data Science,medium,Precision measures correctness of positive predictions while recall measures how many actual positives were found.,20,8.6
+RAW-110,What is F1 score?,Data Science,medium,F1 score is the harmonic mean of precision and recall providing a balance between them.,18,8.7
+RAW-111,What is SQL?,Database,easy,SQL is a language used to manage and query relational databases.,13,8.9
+RAW-112,Explain JOIN in SQL.,Database,medium,A JOIN combines rows from multiple tables based on related columns.,14,8.7
+RAW-113,What is indexing in databases?,Database,medium,Indexing improves query speed by creating data structures that allow faster lookup of records.,18,8.6
+RAW-114,What is NoSQL?,Database,easy,NoSQL databases store data in flexible formats such as key value document or graph structures.,19,8.8
+RAW-115,Explain ACID properties.,Database,hard,ACID ensures database reliability through atomicity consistency isolation and durability.,14,8.4
+RAW-116,What is an operating system kernel?,Computer Science,medium,The kernel is the core part of an operating system that manages hardware and system resources.,18,8.6
+RAW-117,What is multithreading?,Computer Science,medium,Multithreading allows multiple threads to run concurrently within a program improving performance.,17,8.7
+RAW-118,Explain deadlock.,Computer Science,hard,Deadlock occurs when processes wait indefinitely for resources held by each other preventing progress.,18,8.4
+RAW-119,What is caching?,Computer Science,easy,Caching stores frequently accessed data in a faster storage layer to improve performance.,17,8.8
+RAW-120,Explain load balancing.,Computer Science,medium,Load balancing distributes workloads across multiple systems to improve performance and reliability.,18,8.6
+RAW-121,What is HTTP status code 404?,Web,easy,HTTP 404 indicates that the requested resource could not be found on the server.,16,8.9
+RAW-122,What is REST API?,Web,medium,A REST API is an interface that uses HTTP methods to allow communication between systems.,17,8.8
+RAW-123,Explain cookies in web.,Web,medium,Cookies are small pieces of data stored in the browser to remember user sessions and preferences.,19,8.7
+RAW-124,What is session management?,Web,medium,Session management tracks user interactions across multiple requests to maintain state.,16,8.6
+RAW-125,Explain cross site scripting.,Cybersecurity,hard,Cross site scripting is an attack where malicious scripts are injected into trusted websites.,17,8.3
+RAW-126,What is cryptocurrency?,Finance,easy,Cryptocurrency is a digital currency secured by cryptography and typically operates on blockchain technology.,18,8.8
+RAW-127,What is Bitcoin?,Finance,easy,Bitcoin is the first decentralized cryptocurrency that allows peer to peer transactions without intermediaries.,19,8.7
+RAW-128,Explain smart investing.,Finance,medium,Smart investing involves diversifying assets managing risk and focusing on long term growth.,17,8.6
+RAW-129,What is risk management?,Finance,medium,Risk management involves identifying analyzing and minimizing potential financial losses.,16,8.7
+RAW-130,Explain compound interest.,Finance,medium,Compound interest is the process where interest is earned on both the initial principal and accumulated interest.,21,8.8
+RAW-131,What is psychology?,Psychology,easy,Psychology is the scientific study of behavior and mental processes.,12,8.9
+RAW-132,Explain motivation.,Psychology,medium,Motivation is the internal drive that influences behavior and goal oriented actions.,16,8.7
+RAW-133,What is cognitive bias?,Psychology,medium,Cognitive bias is a systematic pattern of deviation from rational judgment.,14,8.6
+RAW-134,Explain stress management.,Psychology,medium,Stress management involves techniques to control stress such as relaxation exercise and time management.,18,8.7
+RAW-135,What is self awareness?,Psychology,easy,Self awareness is the ability to understand one's own thoughts emotions and behaviors.,16,8.9
+RAW-136,What is climate change?,Environment,easy,Climate change refers to long term shifts in temperature and weather patterns largely caused by human activities.,20,8.8
+RAW-137,Explain carbon footprint.,Environment,medium,Carbon footprint measures total greenhouse gas emissions caused by an individual or organization.,18,8.6
+RAW-138,What is recycling?,Environment,easy,Recycling is the process of converting waste materials into reusable resources.,14,8.9
+RAW-139,Explain deforestation.,Environment,medium,Deforestation is the large scale removal of forests often for agriculture or urban development.,18,8.7
+RAW-140,What is biodiversity?,Environment,easy,Biodiversity refers to the variety of life forms within an ecosystem.,13,8.9
+RAW-141,What is leadership style?,Business,medium,Leadership style refers to the approach a leader takes to guide and manage a team.,17,8.7
+RAW-142,Explain teamwork.,Business,easy,Teamwork is the collaborative effort of individuals working together toward a common goal.,17,8.8
+RAW-143,What is marketing?,Business,easy,Marketing involves promoting and selling products or services to customers.,14,8.9
+RAW-144,Explain branding.,Business,medium,Branding is the process of creating a unique identity and image for a product or company.,18,8.7
+RAW-145,What is customer experience?,Business,medium,Customer experience is the overall perception a customer has when interacting with a brand.,18,8.8
+RAW-146,What is education?,Education,easy,Education is the process of acquiring knowledge skills values and habits.,13,8.9
+RAW-147,Explain e learning.,Education,medium,E learning uses digital platforms to deliver educational content and training remotely.,16,8.7
+RAW-148,What is curriculum?,Education,easy,Curriculum is the structured set of subjects and content taught in an educational program.,17,8.8
+RAW-149,Explain pedagogy.,Education,medium,Pedagogy is the method and practice of teaching and learning processes.,14,8.6
+RAW-150,What is assessment?,Education,easy,Assessment evaluates student learning progress and performance.,10,8.9
+RAW-151,What is ethics?,Philosophy,easy,Ethics is the study of moral principles that govern behavior.,12,8.9
+RAW-152,Explain utilitarianism.,Philosophy,medium,Utilitarianism is a theory that promotes actions that maximize overall happiness.,15,8.7
+RAW-153,What is logic?,Philosophy,easy,Logic is the study of reasoning and valid arguments.,11,8.9
+RAW-154,Explain free will.,Philosophy,hard,Free will is the ability of individuals to make choices independently of external constraints.,17,8.4
+RAW-155,What is epistemology?,Philosophy,hard,Epistemology is the branch of philosophy concerned with the nature and scope of knowledge.,17,8.5
+RAW-156,What is art?,Creative,easy,Art is the expression of creativity and imagination in visual auditory or performance forms.,16,8.9
+RAW-157,Explain storytelling.,Creative,medium,Storytelling is the art of conveying ideas and emotions through narrative structures.,15,8.8
+RAW-158,What is design thinking?,Creative,medium,Design thinking is a problem solving approach focused on empathy creativity and iteration.,17,8.7
+RAW-159,Explain creativity.,Creative,easy,Creativity is the ability to generate new ideas or solutions.,11,8.9
+RAW-160,What is innovation process?,Creative,medium,The innovation process involves generating developing and implementing new ideas.,14,8.7
+RAW-161,What is sports science?,Health,easy,Sports science studies how the body performs during physical activity.,12,8.9
+RAW-162,Explain nutrition.,Health,easy,Nutrition is the process of consuming and utilizing food for growth and health.,15,8.8
+RAW-163,What is exercise?,Health,easy,Exercise is physical activity performed to improve fitness and health.,12,8.9
+RAW-164,Explain mental health.,Health,medium,Mental health refers to emotional psychological and social well being.,13,8.8
+RAW-165,What is sleep importance?,Health,easy,Sleep is essential for recovery brain function and overall health.,13,8.9
+RAW-166,What is communication?,Social,easy,Communication is the exchange of information between individuals.,11,8.9
+RAW-167,Explain culture.,Social,medium,Culture consists of shared beliefs values customs and behaviors of a group.,15,8.8
+RAW-168,What is society?,Social,easy,Society is a group of people living together with shared systems and norms.,15,8.9
+RAW-169,Explain globalization.,Social,medium,Globalization is the interconnectedness of economies cultures and populations worldwide.,16,8.7
+RAW-170,What is diversity?,Social,easy,Diversity refers to the presence of differences within a group.,11,8.9
+RAW-171,What is physics?,Science,easy,Physics is the study of matter energy and the laws governing them.,13,8.9
+RAW-172,Explain chemistry.,Science,easy,Chemistry studies substances their properties and reactions.,10,8.9
+RAW-173,What is biology?,Science,easy,Biology is the study of living organisms.,8,8.9
+RAW-174,Explain gravity.,Science,easy,Gravity is the force that attracts objects toward each other.,11,8.9
+RAW-175,What is energy?,Science,easy,Energy is the capacity to do work.,8,8.9
+RAW-176,What is law?,Law,easy,Law is a system of rules recognized by a society.,12,8.9
+RAW-177,Explain justice.,Law,medium,Justice is the concept of fairness in the protection of rights and punishment of wrongs.,18,8.7
+RAW-178,What is constitution?,Law,easy,A constitution is a set of fundamental principles governing a nation.,15,8.8
+RAW-179,Explain rights.,Law,easy,Rights are legal or moral entitlements individuals possess.,10,8.9
+RAW-180,What is regulation?,Law,medium,Regulation refers to rules established to control behavior or activities.,13,8.7
+RAW-181,What is AI alignment?,Artificial Intelligence,hard,AI alignment ensures that artificial intelligence systems act in accordance with human values and intentions.,18,8.3
+RAW-182,Explain prompt engineering.,Artificial Intelligence,medium,Prompt engineering is the practice of designing inputs to guide AI models toward desired outputs.,18,8.6
+RAW-183,What is LLM?,Artificial Intelligence,easy,LLM stands for large language model trained on vast amounts of text data.,15,8.8
+RAW-184,Explain hallucination in AI.,Artificial Intelligence,medium,AI hallucination occurs when a model generates incorrect or fabricated information confidently.,16,8.5
+RAW-185,What is model fine tuning?,Artificial Intelligence,medium,Fine tuning is the process of adapting a pretrained model to a specific task using additional data.,19,8.6
+RAW-186,What is robotics?,Technology,easy,Robotics is the field of designing building and operating robots.,13,8.9
+RAW-187,Explain automation impact.,Technology,medium,Automation increases efficiency but can replace certain human jobs.,12,8.6
+RAW-188,What is VR?,Technology,easy,Virtual reality creates immersive digital environments for users.,10,8.9
+RAW-189,Explain AR.,Technology,easy,Augmented reality overlays digital content onto the real world.,11,8.9
+RAW-190,What is metaverse?,Technology,medium,The metaverse is a virtual shared space combining physical and digital realities.,14,8.6
+RAW-191,What is problem solving?,Cognitive,easy,Problem solving is the process of finding solutions to difficult issues.,13,8.9
+RAW-192,Explain decision making.,Cognitive,medium,Decision making is the process of selecting the best option among alternatives.,14,8.7
+RAW-193,What is learning?,Cognitive,easy,Learning is the process of acquiring knowledge or skills.,10,8.9
+RAW-194,Explain memory.,Cognitive,medium,Memory is the ability to store retain and recall information.,12,8.8
+RAW-195,What is intelligence?,Cognitive,easy,Intelligence is the ability to learn understand and apply knowledge.,12,8.9
+RAW-196,What is future of AI?,Futurism,medium,The future of AI includes advancements in automation decision making and human machine collaboration.,17,8.7
+RAW-197,Explain digital economy.,Futurism,medium,The digital economy is based on digital technologies including internet platforms and data driven services.,18,8.6
+RAW-198,What is innovation future?,Futurism,medium,Future innovation will focus on sustainability AI and advanced technologies.,12,8.6
+RAW-199,Explain smart cities.,Futurism,medium,Smart cities use technology and data to improve urban living conditions and efficiency.,15,8.7
+RAW-200,What is human AI collaboration?,Futurism,hard,Human AI collaboration combines human creativity with machine intelligence to enhance decision making and productivity.,18,8.4

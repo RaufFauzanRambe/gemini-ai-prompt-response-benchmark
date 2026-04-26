@@ -1,0 +1,21 @@
+prompt_id,prompt,category,difficulty,gemini_score,gpt4o_score,claude35_score,llama3_score,gemini_rank,gpt4o_rank,claude35_rank,llama3_rank,winner
+RAW-001,"Explain quantum entanglement simply",Science & Technology,easy,4.3,4.4,4.5,3.8,3,2,1,4,claude-3.5
+RAW-002,"Implement A* pathfinding in Python",Programming,hard,4.5,4.6,4.3,3.5,2,1,3,4,gpt-4o
+RAW-003,"Analyze AI impact on labor market",Economics & Business,medium,4.3,4.2,4.4,3.2,2,3,1,4,claude-3.5
+RAW-004,"Compose a haiku about seasons",Creative Writing,easy,4.7,4.5,4.6,3.9,1,3,2,4,gemini-1.5-pro
+RAW-005,"Derive gradient formula for neural networks",Mathematics,hard,4.1,4.3,4.2,3.6,3,1,2,4,gpt-4o
+RAW-006,"Translate proverb into 4 languages",Translation & Linguistics,medium,4.4,4.2,4.5,3.4,2,3,1,4,claude-3.5
+RAW-007,"Compare TCP and UDP protocols",Computer Networking,medium,4.6,4.5,4.6,4.0,1,3,1,4,gemini-1.5-pro
+RAW-008,"Design social media database schema",Database Design,hard,4.2,4.4,4.1,3.3,2,1,3,4,gpt-4o
+RAW-009,"Explain greenhouse effect",Science & Technology,easy,4.3,4.3,4.4,3.7,2,2,1,4,claude-3.5
+RAW-010,"Persuasive essay: four-day work week",Persuasive Writing,medium,4.5,4.3,4.6,3.5,2,3,1,4,claude-3.5
+RAW-036,"Explain relativity for non-scientists",Science & Technology,medium,4.4,4.5,4.4,3.6,2,1,2,4,gpt-4o
+RAW-037,"Implement merge sort with complexity analysis",Programming,medium,4.5,4.4,4.3,3.8,1,2,3,4,gemini-1.5-pro
+RAW-038,"Ethical implications of CRISPR",Ethics & Philosophy,hard,4.2,4.3,4.5,3.1,3,2,1,4,claude-3.5
+RAW-039,"Product description for headphones",Marketing,easy,4.1,4.2,4.0,3.5,2,1,3,4,gpt-4o
+RAW-040,"Compare SQL vs NoSQL databases",Database Design,medium,4.4,4.3,4.4,3.6,1,3,1,4,gemini-1.5-pro
+RAW-046,"WebSocket chat server in Node.js",Programming,hard,4.3,4.5,4.2,3.4,2,1,3,4,gpt-4o
+RAW-047,"Explain quantum computing applications",Science & Technology,hard,4.2,4.1,4.4,3.0,2,3,1,4,claude-3.5
+RAW-048,"Cover letter for software engineer",Professional Writing,easy,4.1,4.3,4.2,3.6,3,1,2,4,gpt-4o
+RAW-049,"Distributed caching strategy",Software Architecture,hard,4.4,4.2,4.3,3.2,1,3,2,4,gemini-1.5-pro
+RAW-050,"Explain psychological flow state",Psychology,medium,4.5,4.3,4.5,3.5,1,3,1,4,gemini-1.5-pro

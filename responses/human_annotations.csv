@@ -1,0 +1,31 @@
+response_id,prompt_id,annotator_id,relevance,coherence,factual_accuracy,completeness,creativity,overall_quality,comments
+RESP-001,RAW-001,ANN-001,4.0,4.0,5.0,4.0,,4.3,Good explanation with nice analogy. Could be slightly more detailed on the measurement aspect.
+RESP-001,RAW-001,ANN-002,5.0,4.5,4.5,4.0,,4.3,Excellent use of the glove analogy. Very accessible for high school level.
+RESP-001,RAW-001,ANN-003,4.5,4.5,4.5,4.0,,4.4,Strong explanation. The Einstein quote adds good context. Minor: could explain superposition briefly.
+RESP-002,RAW-002,ANN-001,5.0,4.5,5.0,4.5,,4.5,Comprehensive implementation with excellent documentation. Type hints are a plus.
+RESP-002,RAW-002,ANN-002,5.0,5.0,4.5,4.5,,4.6,Production-quality code. Good use of heapq. Minor: could add Manhattan distance heuristic example.
+RESP-002,RAW-002,ANN-003,4.5,4.5,4.5,4.5,,4.5,Very solid implementation. The custom heuristic support is well-designed.
+RESP-003,RAW-003,ANN-001,4.5,4.5,4.0,4.5,,4.3,Well-structured analysis with good data references. Could mention specific industries more.
+RESP-003,RAW-003,ANN-002,4.5,4.5,4.0,4.5,,4.3,Strong macroeconomic perspective. The McKinsey and WEF references add credibility.
+RESP-003,RAW-003,ANN-003,4.5,4.5,4.0,4.5,,4.4,Balanced view of both displacement and creation. Good conclusion on policy implications.
+RESP-004,RAW-004,ANN-001,5.0,5.0,,4.5,4.5,4.7,Beautiful haiku. Perfect syllable count (5-7-5). Evocative imagery.
+RESP-004,RAW-004,ANN-002,5.0,5.0,,5.0,5.0,4.8,Stunning use of imagery. The em-dash creates excellent rhythm between second and third lines.
+RESP-004,RAW-004,ANN-003,5.0,5.0,,4.5,4.5,4.7,Simple yet elegant. Captures the seasonal transition perfectly.
+RESP-005,RAW-005,ANN-001,4.5,4.0,4.5,4.0,,4.2,Mathematically rigorous. Good connection to neural networks. Could elaborate on backpropagation.
+RESP-005,RAW-005,ANN-002,4.5,4.0,5.0,4.0,,4.1,Excellent derivation. The geometric interpretation section is particularly clear.
+RESP-005,RAW-005,ANN-003,4.0,4.0,4.5,4.0,,4.0,Solid mathematical treatment. The neural network application could use more depth.
+RESP-006,RAW-006,ANN-001,4.5,4.5,4.5,4.5,,4.4,Impressive multilingual translation. Cultural context is insightful and well-researched.
+RESP-006,RAW-006,ANN-002,4.5,4.5,4.0,4.5,,4.4,Good translations with cultural commentary. The Arabic 'baraka' explanation is excellent.
+RESP-006,RAW-006,ANN-003,4.5,4.5,4.5,4.5,,4.5,Comprehensive coverage of all four languages. Cultural nuances well-explained.
+RESP-007,RAW-007,ANN-001,5.0,4.5,5.0,4.5,,4.7,Very clear comparison. Use cases are well-defined. Excellent practical guidance.
+RESP-007,RAW-007,ANN-002,5.0,4.5,4.5,4.5,,4.6,Thorough comparison with good examples for each protocol's ideal use case.
+RESP-007,RAW-007,ANN-003,5.0,5.0,4.5,5.0,,4.7,Outstanding explanation. The head-of-line blocking point is a great addition.
+RESP-008,RAW-008,ANN-001,4.5,4.0,4.5,4.0,,4.2,Well-designed schema. Indexing strategy is sound. Could add more on data types selection.
+RESP-008,RAW-008,ANN-002,4.5,4.0,4.5,4.5,,4.3,Good normalization approach. The denormalization note for counters is a practical touch.
+RESP-008,RAW-008,ANN-003,4.0,4.0,4.5,4.0,,4.1,Solid schema design. The UUID choice is appropriate for distributed systems.
+RESP-009,RAW-009,ANN-001,4.5,4.5,4.5,4.0,,4.3,Accurate and accessible explanation. The ppm data point adds concrete context.
+RESP-009,RAW-009,ANN-002,4.5,4.5,4.5,4.5,,4.4,Comprehensive explanation covering natural vs enhanced greenhouse effect. Well-structured.
+RESP-009,RAW-009,ANN-003,4.5,4.5,4.5,4.0,,4.3,Good balance of scientific accuracy and accessibility. The anthropogenic factors are well-covered.
+RESP-010,RAW-010,ANN-001,5.0,4.5,,4.5,4.5,4.5,Compelling argumentation with strong evidence from real-world trials.
+RESP-010,RAW-010,ANN-002,5.0,4.5,,4.5,4.5,4.5,Excellent use of real data (Iceland, UK trials). The Parkinson's Law argument is clever.
+RESP-010,RAW-010,ANN-003,5.0,5.0,,4.5,4.5,4.5,Well-structured persuasive essay. Environmental benefits section adds valuable dimension.

@@ -1,0 +1,233 @@
+{
+  "model_info": {
+    "model_name": "gemini-1.5-pro",
+    "api_version": "v1beta",
+    "evaluation_date": "2026-04-24",
+    "total_responses": 50
+  },
+  "generation_config": {
+    "default_temperature": 0.7,
+    "default_max_tokens": 2048,
+    "default_top_p": 0.95,
+    "default_top_k": 40
+  },
+  "summary_stats": {
+    "avg_response_length_words": 1342,
+    "avg_latency_ms": 2134,
+    "min_latency_ms": 456,
+    "max_latency_ms": 5678,
+    "avg_quality_score": 4.35
+  },
+  "responses": [
+    {
+      "id": "RESP-001",
+      "prompt_id": "RAW-001",
+      "prompt": "Explain the concept of quantum entanglement in simple terms that a high school student could understand.",
+      "response": "Quantum entanglement is one of the most fascinating phenomena in physics. Imagine you have two particles that are linked together in a special way. When something happens to one particle, it instantly affects the other particle, no matter how far apart they are.",
+      "quality_metrics": {
+        "relevance": 4.5,
+        "coherence": 4.3,
+        "factual_accuracy": 4.5,
+        "completeness": 4.0,
+        "overall": 4.3
+      },
+      "metadata": {
+        "temperature": 0.7,
+        "max_tokens": 1024,
+        "latency_ms": 1234,
+        "response_length_words": 847,
+        "category": "Science & Technology",
+        "difficulty": "easy"
+      }
+    },
+    {
+      "id": "RESP-002",
+      "prompt_id": "RAW-002",
+      "prompt": "Write a Python function that implements the A* pathfinding algorithm with support for diagonal movement and custom heuristic functions.",
+      "response": "Here's a comprehensive implementation of the A* pathfinding algorithm in Python with type hints, configurable diagonal movement, and pluggable heuristic functions.",
+      "quality_metrics": {
+        "relevance": 5.0,
+        "coherence": 4.5,
+        "factual_accuracy": 4.5,
+        "completeness": 4.5,
+        "code_correctness": 4.5,
+        "overall": 4.5
+      },
+      "metadata": {
+        "temperature": 0.3,
+        "max_tokens": 2048,
+        "latency_ms": 3456,
+        "response_length_words": 2456,
+        "category": "Programming",
+        "difficulty": "hard"
+      }
+    },
+    {
+      "id": "RESP-003",
+      "prompt_id": "RAW-003",
+      "prompt": "Analyze the economic impact of artificial intelligence on the global labor market over the next decade.",
+      "response": "The economic impact of AI on the global labor market represents one of the most significant transformations since the Industrial Revolution. Up to 375 million workers may need to switch occupations by 2030.",
+      "quality_metrics": {
+        "relevance": 4.5,
+        "coherence": 4.5,
+        "factual_accuracy": 4.0,
+        "completeness": 4.5,
+        "overall": 4.3
+      },
+      "metadata": {
+        "temperature": 0.7,
+        "max_tokens": 2048,
+        "latency_ms": 4521,
+        "response_length_words": 1893,
+        "category": "Economics & Business",
+        "difficulty": "medium"
+      }
+    },
+    {
+      "id": "RESP-004",
+      "prompt_id": "RAW-004",
+      "prompt": "Compose a haiku about the changing of seasons from winter to spring.",
+      "response": "Frost melts from the branch, Green shoots push through waking earth — Spring breathes life anew.",
+      "quality_metrics": {
+        "relevance": 5.0,
+        "coherence": 5.0,
+        "creativity": 4.5,
+        "overall": 4.7
+      },
+      "metadata": {
+        "temperature": 0.9,
+        "max_tokens": 256,
+        "latency_ms": 567,
+        "response_length_words": 15,
+        "category": "Creative Writing",
+        "difficulty": "easy"
+      }
+    },
+    {
+      "id": "RESP-005",
+      "prompt_id": "RAW-005",
+      "prompt": "Derive the mathematical formula for the gradient of a multi-variable function.",
+      "response": "The gradient of a multi-variable function f: R^n → R is defined as the vector of all partial derivatives. For each component i, ∂f/∂x_i is defined as the limit...",
+      "quality_metrics": {
+        "relevance": 4.5,
+        "coherence": 4.0,
+        "factual_accuracy": 4.5,
+        "mathematical_rigor": 4.0,
+        "overall": 4.1
+      },
+      "metadata": {
+        "temperature": 0.5,
+        "max_tokens": 2048,
+        "latency_ms": 2890,
+        "response_length_words": 1654,
+        "category": "Mathematics",
+        "difficulty": "hard"
+      }
+    },
+    {
+      "id": "RESP-006",
+      "prompt_id": "RAW-006",
+      "prompt": "Translate the proverb into French, Spanish, Japanese, and Arabic with cultural context.",
+      "response": "French: 'L'avenir appartient à ceux qui se lèvent tôt.' Spanish: 'El que madruga, Dios le ayuda.' Japanese: '早起きは三文の得'. Arabic: 'البركة في البكور'.",
+      "quality_metrics": {
+        "relevance": 4.5,
+        "coherence": 4.5,
+        "translation_accuracy": 4.5,
+        "cultural_depth": 4.0,
+        "overall": 4.4
+      },
+      "metadata": {
+        "temperature": 0.7,
+        "max_tokens": 1024,
+        "latency_ms": 1876,
+        "response_length_words": 1234,
+        "category": "Translation & Linguistics",
+        "difficulty": "medium"
+      }
+    },
+    {
+      "id": "RESP-007",
+      "prompt_id": "RAW-007",
+      "prompt": "What are the main differences between TCP and UDP protocols?",
+      "response": "TCP is a connection-oriented, reliable protocol with guaranteed delivery and ordered data. UDP is a connectionless, lightweight protocol optimized for speed over reliability.",
+      "quality_metrics": {
+        "relevance": 5.0,
+        "coherence": 4.5,
+        "factual_accuracy": 4.5,
+        "completeness": 4.5,
+        "overall": 4.6
+      },
+      "metadata": {
+        "temperature": 0.5,
+        "max_tokens": 1024,
+        "latency_ms": 2100,
+        "response_length_words": 1456,
+        "category": "Computer Networking",
+        "difficulty": "medium"
+      }
+    },
+    {
+      "id": "RESP-008",
+      "prompt_id": "RAW-008",
+      "prompt": "Design a database schema for a social media platform.",
+      "response": "The schema includes users, posts, comments, likes, follows, and direct_messages tables with appropriate indexes for query performance optimization.",
+      "quality_metrics": {
+        "relevance": 4.5,
+        "coherence": 4.0,
+        "schema_quality": 4.5,
+        "scalability": 4.0,
+        "overall": 4.2
+      },
+      "metadata": {
+        "temperature": 0.3,
+        "max_tokens": 2048,
+        "latency_ms": 3890,
+        "response_length_words": 1789,
+        "category": "Database Design",
+        "difficulty": "hard"
+      }
+    },
+    {
+      "id": "RESP-009",
+      "prompt_id": "RAW-009",
+      "prompt": "Explain the greenhouse effect and how human activities contribute to global warming.",
+      "response": "The greenhouse effect is a natural process that warms Earth. Greenhouse gases trap heat. Human activities like burning fossil fuels and deforestation have intensified this effect, raising CO2 from 280 to 420+ ppm.",
+      "quality_metrics": {
+        "relevance": 4.5,
+        "coherence": 4.5,
+        "factual_accuracy": 4.5,
+        "clarity": 4.0,
+        "overall": 4.3
+      },
+      "metadata": {
+        "temperature": 0.7,
+        "max_tokens": 1024,
+        "latency_ms": 1678,
+        "response_length_words": 1345,
+        "category": "Science & Technology",
+        "difficulty": "easy"
+      }
+    },
+    {
+      "id": "RESP-010",
+      "prompt_id": "RAW-010",
+      "prompt": "Write a persuasive essay arguing for the implementation of a four-day work week.",
+      "response": "The four-day work week is not a radical idea — it is an overdue evolution. Evidence from Iceland, the UK, and Japan overwhelmingly supports this transition.",
+      "quality_metrics": {
+        "relevance": 5.0,
+        "coherence": 4.5,
+        "argument_strength": 4.5,
+        "evidence_quality": 4.5,
+        "overall": 4.5
+      },
+      "metadata": {
+        "temperature": 0.7,
+        "max_tokens": 2048,
+        "latency_ms": 4102,
+        "response_length_words": 1876,
+        "category": "Persuasive Writing",
+        "difficulty": "medium"
+      }
+    }
+  ]
+}

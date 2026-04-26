@@ -34,3 +34,318 @@ RAW-032,"Write a poem about the beauty of the night sky.",Creative Writing,easy,
 RAW-033,"Explain the concept of cognitive biases and list five common examples.",Psychology,medium,"Cognitive biases are systematic patterns of deviation from rational judgment that affect how we make decisions.",1234,4.4,train
 RAW-034,"Create a disaster recovery plan for a cloud-native application.",DevOps,hard,"A disaster recovery (DR) plan for a cloud-native application requires a fundamentally different approach than traditional.",1890,4.1,train
 RAW-035,"Explain the water cycle and its importance for Earth's ecosystems.",Science & Technology,easy,"The water cycle, also known as the hydrological cycle, is the continuous movement of water on, above, and below.",987,4.3,train
+RAW-036,"Explain the basic principles of electricity, including voltage, current, and resistance.",Physics,easy,"Electricity is the flow of electric charge, typically carried by electrons moving through a conductor such as a wire. The three fundamental concepts are voltage, current, and resistance. Voltage is the potential difference that pushes electrons through a circuit, current is the rate at which electric charge flows, and resistance is the opposition to that flow. These three are related by Ohm’s Law, which states that voltage equals current multiplied by resistance. Understanding these principles helps explain how electrical devices operate in everyday life.",1180,4.4,train
+RAW-037,"Explain the concept of cybersecurity and common threats in the digital world.",Cybersecurity,easy,"Cybersecurity refers to the practice of protecting systems, networks, and data from digital attacks.",1023,4.3,train
+RAW-038,"Build a simple neural network from scratch using Python and NumPy.",Machine Learning,hard,"This implementation demonstrates how to build a neural network from scratch using NumPy.",2103,4.4,train
+RAW-039,"Discuss the impact of social media on mental health among teenagers.",Psychology,medium,"Social media has significantly influenced teenage mental health in both positive and negative ways.",1678,4.2,train
+RAW-040,"Write a short motivational paragraph about persistence.",Creative Writing,easy,"Persistence is the quiet force that turns failure into growth.",210,4.6,train
+RAW-041,"Explain linear regression and its assumptions in statistics.",Mathematics,medium,"Linear regression is a statistical method used to model relationships between variables.",1345,4.3,train
+RAW-042,"Translate 'Knowledge is power' into multiple languages and explain meaning.",Translation,medium,"The phrase 'Knowledge is power' reflects the importance of education.",1120,4.2,train
+RAW-043,"Explain DNS and how domain name resolution works.",Networking,medium,"The Domain Name System (DNS) translates human-readable domain names into IP addresses.",1450,4.5,train
+RAW-044,"Design a scalable chat application architecture.",Software Architecture,hard,"A scalable chat system requires real-time communication and distributed systems.",1980,4.3,train
+RAW-045,"Explain climate change and its global consequences.",Science,easy,"Climate change refers to long-term shifts in temperatures and weather patterns.",1200,4.4,train
+RAW-046,"What is a distributed system?",Computer Science,medium,"A distributed system is a collection of independent computers that work together.",890,4.2,train
+RAW-047,"Explain REST vs GraphQL differences.",Software Engineering,medium,"REST and GraphQL are two API design paradigms.",1230,4.3,train
+RAW-048,"Write a script to automate file organization in Python.",Programming,medium,"This script organizes files based on type using Python.",980,4.1,train
+RAW-049,"Explain Newton's laws of motion with examples.",Physics,easy,"Newton’s laws describe motion and forces.",1100,4.5,train
+RAW-050,"Compare SQL and NoSQL databases.",Database,medium,"SQL databases use structured schemas, while NoSQL is flexible.",1300,4.4,train
+RAW-051,"Write a fictional dialogue between AI and a human.",Creative Writing,easy,"'Why do you exist?' the human asked...",340,4.6,train
+RAW-052,"Explain the concept of time complexity.",Algorithms,easy,"Time complexity measures algorithm efficiency.",900,4.3,train
+RAW-053,"Design a recommendation system for movies.",Machine Learning,hard,"Recommendation systems use collaborative filtering.",2000,4.4,train
+RAW-054,"Explain capitalism vs socialism.",Economics,medium,"Capitalism and socialism differ in ownership and control.",1500,4.2,train
+RAW-055,"Write a poem about technology and humanity.",Creative Writing,easy,"Machines hum beneath neon skies...",250,4.7,train
+RAW-056,"Explain how GPS works.",Science,easy,"GPS uses satellites to determine location.",980,4.3,train
+RAW-057,"Explain edge computing vs cloud computing.",Tech,medium,"Edge computing processes data locally.",1400,4.4,train
+RAW-058,"Write a basic HTML webpage structure.",Programming,easy,"Here is a simple HTML5 template.",300,4.5,train
+RAW-059,"Explain big data and its importance.",Data Science,medium,"Big data refers to large complex datasets.",1200,4.3,train
+RAW-060,"Describe blockchain consensus mechanisms.",Blockchain,hard,"Consensus ensures agreement across nodes.",2100,4.4,train
+RAW-061,"Explain IoT and its applications.",Technology,easy,"IoT connects devices via the internet.",1000,4.3,train
+RAW-062,"Write a sorting algorithm in Java.",Programming,medium,"Here is a quicksort implementation in Java.",1200,4.2,train
+RAW-063,"Explain neural networks simply.",AI,easy,"Neural networks mimic brain neurons.",900,4.5,train
+RAW-064,"Discuss renewable energy sources.",Environment,medium,"Renewable energy includes solar and wind.",1400,4.4,train
+RAW-065,"Explain HTTP vs HTTPS.",Networking,easy,"HTTPS is secure HTTP.",800,4.6,train
+RAW-066,"Design a login authentication system.",Security,hard,"Use hashing and JWT for secure auth.",1800,4.3,train
+RAW-067,"Write a short horror story.",Creative Writing,easy,"The door creaked open...",300,4.7,train
+RAW-068,"Explain data structures overview.",Computer Science,easy,"Data structures organize data efficiently.",1100,4.4,train
+RAW-069,"Explain cloud computing models.",Technology,medium,"IaaS, PaaS, SaaS are cloud models.",1300,4.2,train
+RAW-070,"Write Python code for API call.",Programming,medium,"Use requests library.",700,4.3,train
+RAW-071,"Explain quantum computing basics.",Science,medium,"Quantum computers use qubits.",1500,4.4,train
+RAW-072,"Compare AI ethics issues.",AI Ethics,medium,"AI raises bias and privacy concerns.",1600,4.3,train
+RAW-073,"Explain AR vs VR.",Tech,easy,"AR overlays reality, VR replaces it.",900,4.5,train
+RAW-074,"Write SQL join examples.",Database,easy,"INNER JOIN combines tables.",600,4.4,train
+RAW-075,"Explain digital marketing basics.",Business,easy,"Digital marketing uses online platforms.",1000,4.3,train
+RAW-076,"Explain API rate limiting.",Software,medium,"Rate limiting prevents overload.",1200,4.2,train
+RAW-077,"Write a motivational speech.",Creative Writing,easy,"Success starts with discipline.",400,4.6,train
+RAW-078,"Explain cybersecurity attacks types.",Cybersecurity,medium,"Common attacks include phishing.",1300,4.4,train
+RAW-079,"Explain DevOps principles.",DevOps,medium,"DevOps integrates dev and ops.",1400,4.3,train
+RAW-080,"Write a chatbot logic flow.",AI,medium,"Chatbots use NLP pipelines.",1100,4.2,train
+RAW-081,"Explain GPU vs CPU.",Hardware,easy,"GPU handles parallel tasks.",900,4.5,train
+RAW-082,"Explain SaaS business model.",Business,medium,"SaaS delivers software online.",1200,4.3,train
+RAW-083,"Write JavaScript event handling example.",Programming,easy,"Use addEventListener.",500,4.4,train
+RAW-084,"Explain machine learning pipeline.",ML,medium,"Pipeline includes data preprocessing.",1500,4.4,train
+RAW-085,"Explain human brain vs AI.",AI,easy,"AI is task-specific, brain is general.",1100,4.3,train
+RAW-086,"Write a futuristic story.",Creative Writing,easy,"In 2099, cities floated...",350,4.7,train
+RAW-087,"Explain digital transformation.",Business,medium,"Digital transformation uses tech.",1300,4.2,train
+RAW-088,"Explain computer vision basics.",AI,medium,"CV enables image understanding.",1400,4.4,train
+RAW-089,"Write Python OOP example.",Programming,easy,"Class and object example.",600,4.5,train
+RAW-090,"Explain 5G technology.",Tech,easy,"5G enables faster networks.",1000,4.3,train
+RAW-091,"Explain encryption methods.",Security,medium,"Encryption protects data.",1300,4.4,train
+RAW-092,"Write data cleaning steps.",Data Science,medium,"Cleaning removes noise.",1200,4.3,train
+RAW-093,"Explain agile methodology.",Software,easy,"Agile is iterative development.",1000,4.5,train
+RAW-094,"Explain fintech trends.",Finance,medium,"Fintech disrupts banking.",1400,4.3,train
+RAW-095,"Write AI ethics essay.",AI Ethics,medium,"AI ethics ensures fairness.",1500,4.4,train
+RAW-096,"Explain cloud security.",Security,medium,"Cloud security protects data.",1300,4.2,train
+RAW-097,"Write a sci-fi poem.",Creative Writing,easy,"Stars whisper in code...",280,4.7,train
+RAW-098,"Explain NLP basics.",AI,medium,"NLP processes language.",1400,4.4,train
+RAW-099,"Explain robotics overview.",Robotics,medium,"Robotics combines AI and hardware.",1500,4.3,train
+RAW-100,"Explain future of AI.",AI,medium,"AI will transform industries.",1600,4.5,train
+RAW-101,"Explain edge AI.",AI,medium,"Edge AI processes data locally.",1300,4.4,train
+RAW-102,"Write Python ML example.",Programming,medium,"Use sklearn for ML.",900,4.3,train
+RAW-103,"Explain smart cities.",Technology,medium,"Smart cities use IoT.",1400,4.2,train
+RAW-104,"Explain deep learning.",AI,medium,"Deep learning uses neural networks.",1500,4.5,train
+RAW-105,"Write automation script.",Programming,medium,"Automate tasks with Python.",800,4.3,train
+RAW-106,"Explain data privacy laws.",Law,medium,"GDPR protects data.",1300,4.2,train
+RAW-107,"Explain wearable tech.",Technology,easy,"Wearables track health.",1000,4.4,train
+RAW-108,"Write tech blog intro.",Writing,easy,"Technology is evolving rapidly.",300,4.6,train
+RAW-109,"Explain smart contracts.",Blockchain,medium,"Smart contracts automate agreements.",1400,4.3,train
+RAW-110,"Explain supply chain tech.",Business,medium,"Tech improves logistics.",1300,4.2,train
+RAW-111,"Write a startup idea.",Business,easy,"AI-based tutoring platform.",400,4.5,train
+RAW-112,"Explain virtual assistants.",AI,easy,"Assistants use NLP.",1000,4.4,train
+RAW-113,"Explain digital twins.",Technology,medium,"Digital twins simulate systems.",1400,4.3,train
+RAW-114,"Explain AI bias.",AI Ethics,medium,"Bias comes from data.",1500,4.4,train
+RAW-115,"Write system design basics.",Software,medium,"System design handles scale.",1300,4.3,train
+RAW-116,"Explain cloud scaling.",Cloud,medium,"Scaling adjusts resources.",1200,4.2,train
+RAW-117,"Explain autonomous vehicles.",AI,medium,"Self-driving uses sensors.",1500,4.5,train
+RAW-118,"Write code optimization tips.",Programming,medium,"Optimize loops and memory.",1000,4.3,train
+RAW-119,"Explain e-commerce systems.",Business,medium,"E-commerce uses payment gateways.",1400,4.2,train
+RAW-120,"Explain big tech companies impact.",Business,medium,"Big tech shapes economy.",1500,4.4,train
+RAW-121,"Explain AI in healthcare.",AI,medium,"AI improves diagnosis.",1400,4.5,train
+RAW-122,"Write a vision statement.",Writing,easy,"Empowering future innovation.",200,4.6,train
+RAW-123,"Explain serverless computing.",Cloud,medium,"Serverless removes server management.",1300,4.3,train
+RAW-124,"Explain ethical hacking.",Security,medium,"Ethical hackers test systems.",1400,4.4,train
+RAW-125,"Explain digital identity.",Security,medium,"Digital identity verifies users.",1300,4.2,train
+RAW-126,"Write code documentation guide.",Programming,easy,"Documentation improves clarity.",900,4.5,train
+RAW-127,"Explain gamification.",Business,easy,"Gamification uses rewards.",1000,4.4,train
+RAW-128,"Explain predictive analytics.",Data Science,medium,"Predict future trends.",1400,4.3,train
+RAW-129,"Write innovation essay.",Writing,medium,"Innovation drives growth.",1200,4.4,train
+RAW-130,"Explain edge networking.",Networking,medium,"Edge networking reduces latency.",1300,4.2,train
+RAW-131,"Explain green technology.",Environment,medium,"Green tech reduces impact.",1400,4.4,train
+RAW-132,"Write creative tech idea.",Creative Writing,easy,"AI dream recorder.",300,4.7,train
+RAW-133,"Explain cybersecurity future.",Security,medium,"Threats will evolve.",1500,4.3,train
+RAW-134,"Explain remote work trends.",Business,medium,"Remote work increases flexibility.",1300,4.2,train
+RAW-135,"Explain AI regulation.",Policy,medium,"AI needs governance.",1400,4.3,train
+RAW-136,"Write AI startup pitch.",Business,easy,"AI for education access.",400,4.6,train
+RAW-137,"Explain digital economy.",Economics,medium,"Digital economy uses internet tech.",1500,4.4,train
+RAW-138,"Explain federated learning and its benefits.",Machine Learning,medium,"Federated learning is a distributed approach to training machine learning models where data remains on local devices.",1400,4.4,train
+RAW-139,"Write a Python script for file encryption.",Programming,medium,"This script uses symmetric encryption to secure files.",1100,4.3,train
+RAW-140,"Explain human-computer interaction basics.",Computer Science,easy,"HCI focuses on usability and user experience.",1000,4.4,train
+RAW-141,"Discuss ethical implications of AI surveillance.",AI Ethics,medium,"AI surveillance raises privacy concerns.",1500,4.3,train
+RAW-142,"Explain reinforcement learning.",AI,medium,"Reinforcement learning uses reward signals.",1400,4.5,train
+RAW-143,"Write a short cyberpunk story.",Creative Writing,easy,"Neon lights flickered in the rain...",320,4.7,train
+RAW-144,"Explain data visualization importance.",Data Science,easy,"Visualization helps interpret data.",1100,4.4,train
+RAW-145,"Explain blockchain scalability issues.",Blockchain,hard,"Scalability is a major challenge in blockchain systems.",1800,4.2,train
+RAW-146,"Write Java multithreading example.",Programming,medium,"Threads allow parallel execution.",1200,4.3,train
+RAW-147,"Explain bioinformatics basics.",Biology,medium,"Bioinformatics combines biology and computing.",1400,4.2,train
+RAW-148,"Explain recommendation algorithms.",AI,medium,"Algorithms suggest relevant items.",1500,4.4,train
+RAW-149,"Write a product description for AI tool.",Marketing,easy,"An AI-powered assistant improves productivity.",300,4.6,train
+RAW-150,"Explain computer memory hierarchy.",Computer Architecture,medium,"Memory hierarchy improves performance.",1300,4.3,train
+RAW-151,"Explain green computing.",Environment,easy,"Green computing reduces energy usage.",1100,4.4,train
+RAW-152,"Write CSS layout example.",Programming,easy,"Flexbox and grid layout example.",500,4.5,train
+RAW-153,"Explain digital currency.",Finance,medium,"Digital currency exists electronically.",1300,4.3,train
+RAW-154,"Explain neural style transfer.",AI,medium,"NST blends images using neural networks.",1500,4.4,train
+RAW-155,"Explain operating system functions.",Computer Science,easy,"OS manages hardware and software.",1200,4.5,train
+RAW-156,"Write a script for log analysis.",Programming,medium,"Analyze logs for anomalies.",1000,4.3,train
+RAW-157,"Explain supply and demand graph.",Economics,medium,"Graph shows price equilibrium.",1400,4.4,train
+RAW-158,"Explain robotics sensors.",Robotics,medium,"Sensors detect environment.",1300,4.3,train
+RAW-159,"Write a futuristic dialogue.",Creative Writing,easy,"AI and human debate existence.",350,4.7,train
+RAW-160,"Explain edge security.",Cybersecurity,medium,"Edge devices need protection.",1400,4.2,train
+RAW-161,"Explain graph theory basics.",Mathematics,medium,"Graphs model relationships.",1300,4.3,train
+RAW-162,"Explain digital signal processing.",Engineering,hard,"DSP analyzes signals.",1800,4.2,train
+RAW-163,"Write API documentation example.",Programming,easy,"Example endpoints documented.",600,4.5,train
+RAW-164,"Explain climate tech.",Environment,medium,"Tech combats climate change.",1400,4.4,train
+RAW-165,"Explain swarm intelligence.",AI,medium,"Swarm intelligence mimics nature.",1500,4.3,train
+RAW-166,"Write a productivity guide.",Self Improvement,easy,"Focus and discipline drive success.",800,4.6,train
+RAW-167,"Explain deepfake technology.",AI,medium,"Deepfakes manipulate media.",1400,4.2,train
+RAW-168,"Explain parallel computing.",Computer Science,medium,"Parallel computing runs tasks simultaneously.",1500,4.4,train
+RAW-169,"Write SQL optimization tips.",Database,medium,"Indexes improve performance.",1000,4.3,train
+RAW-170,"Explain behavioral economics.",Economics,medium,"Behavior affects decisions.",1400,4.4,train
+RAW-171,"Explain augmented analytics.",Data Science,medium,"AI automates analytics.",1500,4.3,train
+RAW-172,"Write a leadership essay.",Writing,easy,"Leadership requires vision.",400,4.6,train
+RAW-173,"Explain cybersecurity frameworks.",Security,medium,"Frameworks guide security.",1400,4.3,train
+RAW-174,"Explain human-AI collaboration.",AI,medium,"Humans and AI complement each other.",1500,4.5,train
+RAW-175,"Write JavaScript async example.",Programming,easy,"Async/await handles promises.",600,4.5,train
+RAW-176,"Explain IoT security challenges.",Cybersecurity,medium,"IoT devices are vulnerable.",1400,4.3,train
+RAW-177,"Explain data ethics.",Ethics,medium,"Data must be used responsibly.",1500,4.4,train
+RAW-178,"Write an inspirational story.",Creative Writing,easy,"Failure led to success.",350,4.7,train
+RAW-179,"Explain machine vision.",AI,medium,"Machine vision interprets images.",1400,4.3,train
+RAW-180,"Explain exponential growth.",Mathematics,easy,"Growth increases rapidly.",1200,4.5,train
+RAW-181,"Explain natural selection in simple terms.",Biology,easy,"Natural selection is the process where organisms better adapted to their environment survive and reproduce.",1100,4.5,train
+RAW-182,"Write a Python script for web scraping using BeautifulSoup.",Programming,medium,"This script extracts data from HTML pages using BeautifulSoup.",1200,4.3,train
+RAW-183,"Explain sentiment analysis in NLP.",AI,medium,"Sentiment analysis determines emotional tone from text.",1400,4.4,train
+RAW-184,"Discuss the role of big data in modern business.",Business,medium,"Big data helps companies make informed decisions.",1500,4.3,train
+RAW-185,"Write a short fantasy story.",Creative Writing,easy,"The dragon awoke beneath the mountain...",350,4.7,train
+RAW-186,"Explain encryption vs hashing.",Cybersecurity,medium,"Encryption is reversible, hashing is not.",1300,4.4,train
+RAW-187,"Explain operating system scheduling algorithms.",Computer Science,hard,"Scheduling algorithms manage CPU time.",1800,4.2,train
+RAW-188,"Write a Java class example.",Programming,easy,"A simple class defines properties and methods.",600,4.5,train
+RAW-189,"Explain cloud deployment models.",Cloud,medium,"Public, private, and hybrid clouds.",1400,4.3,train
+RAW-190,"Explain CRISPR technology.",Biotechnology,medium,"CRISPR allows gene editing.",1500,4.5,train
+RAW-191,"Write a marketing slogan for a tech startup.",Marketing,easy,"Innovate your future with AI.",200,4.6,train
+RAW-192,"Explain graph databases.",Database,medium,"Graph databases store relationships.",1300,4.3,train
+RAW-193,"Explain reinforcement learning vs supervised learning.",AI,medium,"Different training approaches.",1500,4.4,train
+RAW-194,"Write a short mystery story.",Creative Writing,easy,"The letter arrived with no sender...",350,4.7,train
+RAW-195,"Explain edge AI use cases.",AI,medium,"Used in autonomous systems.",1400,4.3,train
+RAW-196,"Explain digital payment systems.",Finance,medium,"Digital payments replace cash.",1300,4.2,train
+RAW-197,"Write a Python script for data visualization.",Programming,medium,"Matplotlib plots data.",1100,4.3,train
+RAW-198,"Explain human memory types.",Psychology,medium,"Short-term and long-term memory.",1400,4.4,train
+RAW-199,"Explain cybersecurity best practices.",Security,easy,"Use strong passwords.",1000,4.5,train
+RAW-200,"Explain artificial general intelligence.",AI,medium,"AGI mimics human intelligence.",1500,4.5,train
+RAW-201,"Write a productivity plan.",Self Improvement,easy,"Plan tasks and prioritize.",800,4.6,train
+RAW-202,"Explain database indexing.",Database,medium,"Indexes speed up queries.",1300,4.4,train
+RAW-203,"Explain neural networks layers.",AI,medium,"Input, hidden, output layers.",1400,4.5,train
+RAW-204,"Write a script for file backup automation.",Programming,medium,"Backup files regularly.",1100,4.3,train
+RAW-205,"Explain climate adaptation strategies.",Environment,medium,"Adaptation reduces impact.",1400,4.3,train
+RAW-206,"Explain blockchain mining.",Blockchain,medium,"Mining validates transactions.",1500,4.2,train
+RAW-207,"Write a sci-fi dialogue.",Creative Writing,easy,"Humans vs AI debate future.",350,4.7,train
+RAW-208,"Explain software testing methods.",Software Engineering,medium,"Unit and integration tests.",1300,4.4,train
+RAW-209,"Explain augmented reality applications.",Technology,medium,"AR used in gaming.",1400,4.3,train
+RAW-210,"Write SQL aggregation example.",Database,easy,"Use GROUP BY.",600,4.5,train
+RAW-211,"Explain microprocessors.",Hardware,medium,"CPU processes instructions.",1300,4.4,train
+RAW-212,"Explain digital marketing strategies.",Marketing,medium,"SEO and social media.",1400,4.3,train
+RAW-213,"Write a short inspirational story.",Creative Writing,easy,"A failure turned into success.",350,4.7,train
+RAW-214,"Explain data mining techniques.",Data Science,medium,"Clustering and classification.",1500,4.4,train
+RAW-215,"Explain virtual machines.",Cloud,medium,"VMs simulate computers.",1300,4.3,train
+RAW-216,"Write Python API integration example.",Programming,medium,"Use requests library.",1000,4.3,train
+RAW-217,"Explain robotics control systems.",Robotics,medium,"Controllers guide robots.",1400,4.4,train
+RAW-218,"Explain smart home technology.",Technology,easy,"Smart homes automate tasks.",1100,4.5,train
+RAW-219,"Write a poem about innovation.",Creative Writing,easy,"Ideas spark the future.",250,4.7,train
+RAW-220,"Explain machine learning overfitting.",AI,medium,"Overfitting reduces generalization.",1400,4.5,train
+RAW-221,"Explain financial markets basics.",Finance,medium,"Markets trade assets.",1300,4.3,train
+RAW-222,"Write a system design example.",Software Engineering,hard,"Design scalable systems.",1800,4.2,train
+RAW-223,"Explain genetic algorithms.",AI,medium,"Algorithms inspired by evolution.",1500,4.4,train
+RAW-224,"Explain computer graphics basics.",Computer Science,medium,"Graphics render images.",1400,4.3,train
+RAW-225,"Write JavaScript DOM manipulation example.",Programming,easy,"Modify HTML dynamically.",600,4.5,train
+RAW-226,"Explain green energy technologies.",Environment,medium,"Solar and wind energy.",1400,4.4,train
+RAW-227,"Explain DevSecOps.",DevOps,medium,"Security integrated into DevOps.",1400,4.3,train
+RAW-228,"Write a leadership story.",Creative Writing,easy,"A leader inspires change.",350,4.7,train
+RAW-229,"Explain API gateway.",Software Architecture,medium,"Manages API traffic.",1300,4.4,train
+RAW-230,"Explain predictive modeling.",Data Science,medium,"Predict outcomes using data.",1500,4.4,train
+RAW-231,"Write code debugging tips.",Programming,easy,"Check logs and errors.",900,4.5,train
+RAW-232,"Explain digital transformation strategy.",Business,medium,"Transform using technology.",1400,4.3,train
+RAW-233,"Explain anomaly detection.",AI,medium,"Detect unusual patterns.",1500,4.4,train
+RAW-234,"Write a motivational paragraph.",Creative Writing,easy,"Keep pushing forward.",250,4.6,train
+RAW-235,"Explain distributed databases.",Database,medium,"Data spread across nodes.",1400,4.3,train
+RAW-236,"Explain cybersecurity risk management.",Security,medium,"Identify and mitigate risks.",1400,4.4,train
+RAW-237,"Write Python recursion example.",Programming,easy,"Function calls itself.",700,4.5,train
+RAW-238,"Explain smart grids.",Energy,medium,"Smart grids optimize electricity.",1400,4.3,train
+RAW-239,"Explain edge analytics.",Data Science,medium,"Analyze data locally.",1400,4.3,train
+RAW-240,"Write a futuristic scenario.",Creative Writing,easy,"Cities powered by AI.",300,4.7,train
+RAW-241,"Explain cloud orchestration.",Cloud,medium,"Automates cloud resources.",1300,4.3,train
+RAW-242,"Explain AI in education.",AI,medium,"AI personalizes learning.",1500,4.5,train
+RAW-243,"Write a startup pitch.",Business,easy,"AI for global learning.",400,4.6,train
+RAW-244,"Explain bioengineering.",Biology,medium,"Engineering applied to biology.",1400,4.3,train
+RAW-245,"Explain voice recognition systems.",AI,medium,"Convert speech to text.",1400,4.4,train
+RAW-246,"Write a system monitoring script.",Programming,medium,"Monitor CPU usage.",1000,4.3,train
+RAW-247,"Explain supply chain automation.",Business,medium,"Automation improves efficiency.",1400,4.3,train
+RAW-248,"Explain human-centered design.",Design,medium,"Focus on user needs.",1300,4.4,train
+RAW-249,"Write an innovation story.",Creative Writing,easy,"A simple idea changed everything.",350,4.7,train
+RAW-250,"Explain AI-powered recommendation engines.",AI,medium,"Recommend based on behavior.",1500,4.5,train
+RAW-251,"Explain transfer learning in machine learning.",AI,medium,"Transfer learning reuses knowledge from a pre-trained model to improve performance on a new task.",1400,4.5,train
+RAW-252,"Write a Python script for CSV data processing.",Programming,medium,"Use pandas to read, clean, and transform CSV data efficiently.",1100,4.4,train
+RAW-253,"Explain data warehousing concepts.",Data Engineering,medium,"A data warehouse centralizes structured data for analytics and reporting.",1400,4.3,train
+RAW-254,"Discuss the impact of automation on jobs.",Economics,medium,"Automation increases productivity but shifts labor demand toward high-skill roles.",1500,4.2,train
+RAW-255,"Write a short adventure story.",Creative Writing,easy,"The map led them beyond the last known shore...",350,4.7,train
+RAW-256,"Explain symmetric vs asymmetric encryption.",Cybersecurity,medium,"Symmetric uses one key; asymmetric uses public-private key pairs.",1300,4.5,train
+RAW-257,"Explain CPU cache levels (L1, L2, L3).",Computer Architecture,medium,"Cache hierarchy reduces latency by storing frequently used data closer to the CPU.",1400,4.4,train
+RAW-258,"Write a C++ vector example.",Programming,easy,"Demonstrates dynamic arrays using std::vector.",600,4.5,train
+RAW-259,"Explain containerization with Docker.",DevOps,medium,"Containers package apps with dependencies for consistent deployment.",1400,4.5,train
+RAW-260,"Explain gene expression basics.",Biology,medium,"Gene expression converts DNA instructions into functional proteins.",1400,4.4,train
+RAW-261,"Write a tagline for a fintech app.",Marketing,easy,"Smarter money, faster moves.",200,4.6,train
+RAW-262,"Explain columnar vs row-based storage.",Database,medium,"Columnar storage optimizes analytics; row-based suits transactions.",1300,4.4,train
+RAW-263,"Explain supervised vs unsupervised learning.",AI,medium,"Supervised uses labeled data; unsupervised finds patterns in unlabeled data.",1400,4.5,train
+RAW-264,"Write a short thriller story.",Creative Writing,easy,"Footsteps echoed behind her in the empty station...",350,4.7,train
+RAW-265,"Explain edge computing latency benefits.",AI,medium,"Processing near data sources reduces round-trip time and bandwidth usage.",1300,4.4,train
+RAW-266,"Explain mobile payment security.",Finance,medium,"Tokenization and encryption protect transactions on mobile devices.",1300,4.3,train
+RAW-267,"Write a Python script for data cleaning with pandas.",Programming,medium,"Handle missing values, duplicates, and type conversions.",1200,4.4,train
+RAW-268,"Explain memory consolidation in psychology.",Psychology,medium,"Memories stabilize from short-term to long-term through consolidation.",1400,4.4,train
+RAW-269,"Explain password security best practices.",Security,easy,"Use long, unique passwords and enable multi-factor authentication.",1000,4.6,train
+RAW-270,"Explain AGI vs narrow AI.",AI,medium,"Narrow AI is task-specific; AGI aims for general human-level intelligence.",1400,4.5,train
+RAW-271,"Write a weekly productivity schedule.",Self Improvement,easy,"Plan focused blocks, rest, and review to maintain momentum.",900,4.6,train
+RAW-272,"Explain database normalization forms.",Database,medium,"Normalization reduces redundancy using 1NF, 2NF, 3NF and beyond.",1400,4.4,train
+RAW-273,"Explain activation functions in neural networks.",AI,medium,"Functions like ReLU and sigmoid introduce non-linearity.",1400,4.5,train
+RAW-274,"Write a Python script for incremental backups.",Programming,medium,"Copy only changed files to reduce storage and time.",1100,4.4,train
+RAW-275,"Explain climate mitigation strategies.",Environment,medium,"Mitigation reduces emissions via efficiency, renewables, and policy.",1400,4.4,train
+RAW-276,"Explain proof-of-work vs proof-of-stake.",Blockchain,medium,"PoW uses computation; PoS uses stake to validate blocks.",1400,4.3,train
+RAW-277,"Write a sci-fi monologue.",Creative Writing,easy,"We taught machines to think, and they taught us to listen...",300,4.7,train
+RAW-278,"Explain unit testing vs integration testing.",Software Engineering,medium,"Unit tests isolate components; integration tests verify interactions.",1300,4.5,train
+RAW-279,"Explain AR in retail use cases.",Technology,medium,"AR enables virtual try-ons and in-store navigation.",1300,4.4,train
+RAW-280,"Write SQL window function example.",Database,medium,"Use ROW_NUMBER and PARTITION BY for ranking within groups.",900,4.5,train
+RAW-281,"Explain instruction sets and ISA.",Hardware,medium,"ISA defines operations a CPU can execute.",1300,4.3,train
+RAW-282,"Explain content marketing basics.",Marketing,medium,"Create valuable content to attract and retain audiences.",1300,4.4,train
+RAW-283,"Write a short uplifting story.",Creative Writing,easy,"He kept showing up, and one day it clicked.",300,4.7,train
+RAW-284,"Explain clustering algorithms.",Data Science,medium,"K-means and hierarchical clustering group similar data points.",1400,4.4,train
+RAW-285,"Explain hypervisors (Type 1 vs Type 2).",Cloud,medium,"Type 1 runs on bare metal; Type 2 runs atop an OS.",1300,4.4,train
+RAW-286,"Write Python requests retry logic.",Programming,medium,"Implement retries with backoff for robust API calls.",1000,4.4,train
+RAW-287,"Explain PID controllers in robotics.",Robotics,medium,"PID adjusts output using proportional, integral, derivative terms.",1500,4.4,train
+RAW-288,"Explain smart home security.",Technology,easy,"Secure IoT devices with updates and strong authentication.",1100,4.5,train
+RAW-289,"Write a poem about curiosity.",Creative Writing,easy,"Questions bloom where answers sleep...",250,4.7,train
+RAW-290,"Explain bias-variance tradeoff.",AI,medium,"Balance underfitting and overfitting to optimize generalization.",1400,4.5,train
+RAW-291,"Explain stock market basics.",Finance,medium,"Stocks represent ownership; markets enable trading and price discovery.",1300,4.4,train
+RAW-292,"Write a scalable URL shortener design.",Software Engineering,hard,"Use hashing, database sharding, and caching for scale.",1800,4.3,train
+RAW-293,"Explain evolutionary algorithms.",AI,medium,"Optimization inspired by natural selection processes.",1400,4.4,train
+RAW-294,"Explain rendering pipelines.",Computer Graphics,medium,"Transform 3D scenes into 2D images through stages.",1400,4.4,train
+RAW-295,"Write JS event delegation example.",Programming,easy,"Handle events efficiently via parent listeners.",700,4.5,train
+RAW-296,"Explain energy storage technologies.",Environment,medium,"Batteries and grid storage balance supply and demand.",1400,4.4,train
+RAW-297,"Explain CI/CD pipelines.",DevOps,medium,"Automate build, test, and deployment workflows.",1400,4.5,train
+RAW-298,"Write a leadership lesson story.",Creative Writing,easy,"She listened first, then led decisively.",300,4.7,train
+RAW-299,"Explain API rate limiting strategies.",Software Architecture,medium,"Token bucket and leaky bucket control traffic.",1300,4.5,train
+RAW-300,"Explain time series forecasting.",Data Science,medium,"Use ARIMA and ML models to predict future values.",1400,4.4,train
+RAW-301,"Write debugging checklist.",Programming,easy,"Reproduce, isolate, log, test, and verify fixes.",900,4.6,train
+RAW-302,"Explain digital transformation roadmap.",Business,medium,"Assess, prioritize, implement, and iterate with metrics.",1400,4.3,train
+RAW-303,"Explain outlier detection.",AI,medium,"Identify anomalies using statistical and ML methods.",1400,4.4,train
+RAW-304,"Write a motivational paragraph about discipline.",Creative Writing,easy,"Discipline turns intention into results.",250,4.6,train
+RAW-305,"Explain CAP theorem.",Distributed Systems,hard,"Consistency, Availability, Partition tolerance—choose two under partition.",1700,4.4,train
+RAW-306,"Explain risk assessment in cybersecurity.",Security,medium,"Identify threats, vulnerabilities, and impact to prioritize controls.",1400,4.4,train
+RAW-307,"Write Python memoization example.",Programming,easy,"Cache results to speed up recursive calls.",800,4.5,train
+RAW-308,"Explain smart grid demand response.",Energy,medium,"Adjust consumption based on supply conditions.",1400,4.3,train
+RAW-309,"Explain edge inference.",Data Science,medium,"Run models on-device for low latency decisions.",1400,4.4,train
+RAW-310,"Write a near-future vignette.",Creative Writing,easy,"Cities whispered data in every streetlight...",300,4.7,train
+RAW-311,"Explain Kubernetes basics.",Cloud,medium,"Orchestrates containers with pods, services, and deployments.",1400,4.5,train
+RAW-312,"Explain AI tutoring systems.",AI,medium,"Adaptive learning personalizes content and pacing.",1400,4.5,train
+RAW-313,"Write a concise startup pitch.",Business,easy,"AI that personalizes learning for everyone, everywhere.",350,4.6,train
+RAW-314,"Explain synthetic biology.",Biology,medium,"Design and construct new biological parts and systems.",1400,4.3,train
+RAW-315,"Explain speech-to-text pipelines.",AI,medium,"Acoustic modeling and language models convert audio to text.",1400,4.5,train
+RAW-316,"Write a system health monitor script.",Programming,medium,"Track CPU, memory, and disk with alerts.",1000,4.4,train
+RAW-317,"Explain logistics optimization.",Business,medium,"Route planning and inventory control reduce costs.",1400,4.3,train
+RAW-318,"Explain design thinking process.",Design,medium,"Empathize, define, ideate, prototype, test.",1300,4.5,train
+RAW-319,"Write an invention story.",Creative Writing,easy,"A small fix unlocked a big breakthrough.",300,4.7,train
+RAW-320,"Explain collaborative filtering.",AI,medium,"Recommend items based on user similarity.",1400,4.5,train
+RAW-321,"Explain ETL vs ELT.",Data Engineering,medium,"ETL transforms before load; ELT transforms after load.",1300,4.4,train
+RAW-322,"Write a Bash backup script.",Programming,medium,"Automate backups with cron and rsync.",900,4.4,train
+RAW-323,"Explain OAuth 2.0 basics.",Security,medium,"Delegated authorization using access tokens.",1300,4.5,train
+RAW-324,"Explain digital twin use cases.",Technology,medium,"Simulate assets for optimization and maintenance.",1400,4.4,train
+RAW-325,"Write a reflective poem.",Creative Writing,easy,"Between what was and what could be...",250,4.7,train
+RAW-326,"Explain feature engineering.",Data Science,medium,"Transform raw data into informative inputs for models.",1400,4.5,train
+RAW-327,"Explain virtualization networking.",Cloud,medium,"Virtual networks isolate and connect workloads.",1300,4.3,train
+RAW-328,"Write Python argparse example.",Programming,easy,"Parse CLI arguments cleanly.",700,4.5,train
+RAW-329,"Explain SLAM in robotics.",Robotics,medium,"Simultaneous Localization and Mapping builds maps while tracking position.",1500,4.4,train
+RAW-330,"Explain home automation protocols.",Technology,easy,"Zigbee, Z-Wave, and Wi-Fi enable device communication.",1200,4.4,train
+RAW-331,"Write a poem about resilience.",Creative Writing,easy,"Storms pass, roots hold fast...",250,4.7,train
+RAW-332,"Explain regularization techniques.",AI,medium,"L1/L2 and dropout reduce overfitting.",1400,4.5,train
+RAW-333,"Explain derivatives basics in finance.",Finance,medium,"Options and futures derive value from underlying assets.",1400,4.3,train
+RAW-334,"Write a scalable chat system design.",Software Engineering,hard,"Use websockets, sharding, and pub/sub for real-time messaging.",1800,4.3,train
+RAW-335,"Explain Monte Carlo methods.",Mathematics,medium,"Use random sampling to estimate numerical results.",1400,4.4,train
+RAW-336,"Explain shading models.",Computer Graphics,medium,"Phong and Blinn-Phong simulate light on surfaces.",1400,4.3,train
+RAW-337,"Write JS fetch API example.",Programming,easy,"Fetch data and handle JSON responses.",700,4.5,train
+RAW-338,"Explain carbon capture technologies.",Environment,medium,"Capture CO2 from sources or air to reduce emissions.",1400,4.4,train
+RAW-339,"Explain infrastructure as code.",DevOps,medium,"Manage infrastructure using code (e.g., Terraform).",1400,4.5,train
+RAW-340,"Write a mentorship story.",Creative Writing,easy,"Guidance turned doubt into direction.",300,4.7,train
+RAW-341,"Explain API versioning strategies.",Software Architecture,medium,"Use URI or headers to manage changes.",1300,4.4,train
+RAW-342,"Explain classification metrics.",Data Science,medium,"Precision, recall, F1, and ROC-AUC evaluate models.",1400,4.5,train
+RAW-343,"Write code review checklist.",Programming,easy,"Check readability, tests, and performance.",900,4.6,train
+RAW-344,"Explain change management in organizations.",Business,medium,"Plan, communicate, and reinforce adoption.",1400,4.3,train
+RAW-345,"Explain concept drift.",AI,medium,"Data distribution changes over time affecting models.",1400,4.4,train
+RAW-346,"Write a short grit-focused paragraph.",Creative Writing,easy,"Do the work, even when it’s boring.",250,4.6,train
+RAW-347,"Explain consensus in distributed systems.",Database,hard,"Protocols like Raft/Paxos ensure agreement among nodes.",1700,4.4,train
+RAW-348,"Explain incident response lifecycle.",Security,medium,"Prepare, detect, contain, eradicate, recover, learn.",1400,4.5,train
+RAW-349,"Write Python caching example.",Programming,easy,"Use functools.lru_cache to memoize results.",800,4.5,train
+RAW-350,"Explain recommender system evaluation.",AI,medium,"Use metrics like precision@k, recall@k, and NDCG.",1400,4.5,train

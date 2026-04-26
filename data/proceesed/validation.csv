@@ -9,3 +9,108 @@ RAW-042,"Explain how the stock market works and how to evaluate a company's stoc
 RAW-043,"Write a suspenseful short story in under 500 words.",Creative Writing,medium,"The footsteps behind her grew louder. Sarah pressed herself against the cold brick wall of the alley, holding her breath.",1987,4.5,validation
 RAW-044,"Compare REST APIs and GraphQL, discussing advantages and disadvantages of each.",Software Engineering,medium,"REST and GraphQL are two different approaches to building APIs, each with distinct architectural philosophies.",1567,4.3,validation
 RAW-045,"Explain the concept of opportunity cost in economics with examples.",Economics & Business,easy,"Opportunity cost is a fundamental economic concept that represents the value of the next best alternative.",876,4.5,validation
+RAW-046,"Explain what blockchain is and how it works in simple terms.",Technology,easy,"Blockchain is a decentralized digital ledger that records transactions across many computers so that the record cannot be altered retroactively.",820,4.3,validation
+RAW-047,"Describe how machine learning differs from traditional programming.",AI & Data Science,medium,"Traditional programming uses explicit rules, while machine learning allows systems to learn patterns from data and improve over time.",940,4.4,validation
+RAW-048,"Explain the water cycle and its importance to Earth.",Science,easy,"The water cycle describes how water evaporates, condenses, and precipitates, continuously circulating through the environment.",760,4.2,validation
+RAW-049,"Write a Python function to check if a number is prime.",Programming,easy,"A prime number is a number greater than 1 that has no divisors other than 1 and itself.",620,4.5,validation
+RAW-050,"Discuss the impact of social media on mental health.",Psychology,medium,"Social media has both positive and negative impacts, influencing connection, self-esteem, and mental well-being.",1200,4.3,validation
+RAW-051,"Explain Newton's three laws of motion with examples.",Physics,medium,"Newton’s laws describe the relationship between a body and the forces acting upon it, forming the basis of classical mechanics.",1100,4.4,validation
+RAW-052,"What is climate change and what causes it?",Environment,easy,"Climate change refers to long-term changes in temperature and weather patterns, largely caused by human activities.",950,4.3,validation
+RAW-053,"Write a SQL query to find the top 5 highest-paid employees.",Database,easy,"You can use ORDER BY and LIMIT to retrieve the top 5 highest salaries from a table.",500,4.4,validation
+RAW-054,"Explain the concept of supply and demand.",Economics,easy,"Supply and demand determine prices in a market based on how much of a product is available and how much people want it.",780,4.5,validation
+RAW-055,"Describe how the internet works at a high level.",Technology,medium,"The internet is a global network of interconnected computers that communicate using standardized protocols.",1100,4.3,validation
+RAW-056,"Explain photosynthesis in simple terms.",Biology,easy,"Photosynthesis is the process by which plants convert sunlight into energy using carbon dioxide and water.",700,4.4,validation
+RAW-057,"Write a JavaScript function to reverse a string.",Programming,easy,"A string can be reversed using built-in methods like split, reverse, and join.",600,4.5,validation
+RAW-058,"Discuss the pros and cons of remote work.",Business,medium,"Remote work offers flexibility but may reduce social interaction and blur work-life boundaries.",1000,4.2,validation
+RAW-059,"Explain the difference between HTTP and HTTPS.",Web Development,easy,"HTTPS is a secure version of HTTP that uses encryption to protect data transmitted over the internet.",800,4.4,validation
+RAW-060,"Describe the process of mitosis.",Biology,medium,"Mitosis is a type of cell division where a single cell divides into two identical daughter cells.",950,4.3,validation
+RAW-061,"Explain the concept of artificial intelligence and its applications.",AI & Technology,easy,"Artificial intelligence refers to machines designed to simulate human intelligence and perform tasks such as learning and decision-making.",1100,4.4,validation
+RAW-062,"Write a function in Python to calculate factorial recursively.",Programming,medium,"Factorial is calculated by multiplying a number by all positive integers below it using recursion.",700,4.5,validation
+RAW-063,"Explain the importance of cybersecurity.",Technology,medium,"Cybersecurity protects systems and data from digital attacks, ensuring confidentiality, integrity, and availability.",1000,4.3,validation
+RAW-064,"Describe the main differences between RAM and ROM.",Computer Science,easy,"RAM is volatile memory used for temporary storage, while ROM is non-volatile and stores permanent data.",780,4.4,validation
+RAW-065,"Explain what a neural network is.",AI & Data Science,medium,"A neural network is a computational model inspired by the human brain, consisting of layers of interconnected nodes.",1150,4.3,validation
+RAW-066,"Discuss renewable vs non-renewable energy sources.",Environment,medium,"Renewable energy comes from sustainable sources, while non-renewable energy relies on finite resources.",1000,4.2,validation
+RAW-067,"Write a short motivational paragraph about perseverance.",Creative Writing,easy,"Perseverance is the quiet force that pushes you forward when everything feels impossible.",500,4.5,validation
+RAW-068,"Explain what APIs are and how they are used.",Software Engineering,medium,"APIs allow different software systems to communicate with each other through defined interfaces.",1050,4.4,validation
+RAW-069,"Describe how GPS works.",Technology,medium,"GPS uses satellites to determine a location on Earth by calculating distances from multiple satellites.",980,4.3,validation
+RAW-070,"Explain the concept of inflation in economics.",Economics,easy,"Inflation refers to the general increase in prices over time, reducing purchasing power.",850,4.4,validation
+RAW-071,"Write a Python program to sort a list using bubble sort.",Programming,easy,"Bubble sort repeatedly swaps adjacent elements if they are in the wrong order.",650,4.3,validation
+RAW-072,"Explain the difference between frontend and backend development.",Web Development,easy,"Frontend handles user interfaces, while backend manages logic, databases, and servers.",900,4.5,validation
+RAW-073,"Discuss the role of ethics in artificial intelligence.",Ethics & AI,hard,"Ethics in AI involves fairness, transparency, and accountability in automated decision-making.",1300,4.2,validation
+RAW-074,"Explain what cloud computing is.",Technology,easy,"Cloud computing provides computing services like storage and processing over the internet.",850,4.4,validation
+RAW-075,"Describe the structure of DNA.",Biology,medium,"DNA consists of a double helix structure made of nucleotides containing genetic information.",1000,4.3,validation
+RAW-076,"Explain how a search engine works.",Technology,medium,"Search engines crawl, index, and rank web pages to deliver relevant results.",1100,4.3,validation
+RAW-077,"Write a short horror story in under 300 words.",Creative Writing,medium,"The door creaked open slowly, revealing nothing but darkness inside.",900,4.5,validation
+RAW-078,"Explain object-oriented programming concepts.",Programming,medium,"OOP includes concepts like encapsulation, inheritance, and polymorphism.",1150,4.4,validation
+RAW-079,"Discuss the importance of data privacy.",Technology,medium,"Data privacy ensures that personal information is collected and used responsibly.",1000,4.2,validation
+RAW-080,"Explain the role of mitochondria in cells.",Biology,easy,"Mitochondria are the powerhouses of the cell, generating energy through respiration.",700,4.4,validation
+RAW-081,"Explain big data and its challenges.",Data Science,medium,"Big data refers to extremely large datasets that require advanced tools to process and analyze.",1200,4.3,validation
+RAW-082,"Write a function to find Fibonacci numbers.",Programming,easy,"Fibonacci numbers are generated by summing the two previous numbers in the sequence.",650,4.5,validation
+RAW-083,"Explain digital marketing strategies.",Marketing,medium,"Digital marketing includes SEO, content marketing, social media, and paid advertising.",1100,4.3,validation
+RAW-084,"Describe how electric circuits work.",Physics,medium,"Electric circuits allow current to flow through components like resistors and capacitors.",1050,4.4,validation
+RAW-085,"Explain the concept of globalization.",Social Studies,easy,"Globalization refers to increased interconnectedness among countries in trade, culture, and communication.",950,4.2,validation
+RAW-086,"Discuss advantages of learning programming.",Education,easy,"Programming enhances problem-solving, creativity, and career opportunities.",700,4.5,validation
+RAW-087,"Explain how vaccines work.",Biology,medium,"Vaccines train the immune system to recognize and fight harmful pathogens.",1100,4.4,validation
+RAW-088,"Write a function to check palindrome strings.",Programming,easy,"A palindrome reads the same forward and backward.",600,4.5,validation
+RAW-089,"Explain the importance of teamwork.",Business,easy,"Teamwork improves efficiency, creativity, and problem-solving.",750,4.3,validation
+RAW-090,"Describe how e-commerce works.",Business,medium,"E-commerce involves buying and selling goods online through digital platforms.",1050,4.4,validation
+RAW-091,"Explain what cryptocurrency is.",Finance,medium,"Cryptocurrency is a digital currency secured by cryptography and often decentralized.",1150,4.3,validation
+RAW-092,"Discuss AI bias and fairness.",AI Ethics,hard,"AI bias occurs when models produce unfair outcomes due to biased data.",1300,4.2,validation
+RAW-093,"Explain the importance of time management.",Self Development,easy,"Time management helps prioritize tasks and improve productivity.",700,4.5,validation
+RAW-094,"Describe how a compiler works.",Computer Science,medium,"A compiler translates high-level code into machine code for execution.",1100,4.3,validation
+RAW-095,"Explain how ecosystems function.",Biology,medium,"Ecosystems consist of living organisms interacting with their environment.",1000,4.4,validation
+RAW-096,"Write a persuasive paragraph about renewable energy.",Writing,medium,"Renewable energy is essential for a sustainable future.",850,4.3,validation
+RAW-097,"Explain machine learning types.",AI,medium,"Machine learning includes supervised, unsupervised, and reinforcement learning.",1200,4.4,validation
+RAW-098,"Describe the human digestive system.",Biology,easy,"The digestive system breaks down food into nutrients for the body.",800,4.3,validation
+RAW-099,"Explain what DevOps is.",Software Engineering,medium,"DevOps integrates development and operations to improve collaboration.",1100,4.4,validation
+RAW-100,"Discuss benefits of exercise.",Health,easy,"Exercise improves physical health, mental well-being, and energy levels.",700,4.5,validation
+RAW-101,"Explain edge computing.",Technology,hard,"Edge computing processes data closer to the source rather than relying on centralized cloud servers.",1200,4.2,validation
+RAW-102,"Write a Python function to remove duplicates from a list.",Programming,easy,"Duplicates can be removed using sets or iteration.",600,4.5,validation
+RAW-103,"Explain neural network overfitting.",AI,hard,"Overfitting occurs when a model learns training data too well and fails to generalize.",1300,4.3,validation
+RAW-104,"Describe blockchain use cases beyond crypto.",Technology,medium,"Blockchain can be used in supply chains, healthcare, and voting systems.",1100,4.3,validation
+RAW-105,"Explain IoT and its applications.",Technology,medium,"IoT connects devices to the internet for data exchange and automation.",1000,4.4,validation
+RAW-106,"Explain SaaS vs PaaS vs IaaS.",Cloud Computing,medium,"These are different cloud service models offering varying levels of control and management.",1150,4.4,validation
+RAW-107,"Write a simple REST API example.",Programming,medium,"A REST API allows communication between systems using HTTP methods.",900,4.5,validation
+RAW-108,"Explain data structures: stack vs queue.",Computer Science,easy,"Stacks follow LIFO while queues follow FIFO principles.",800,4.4,validation
+RAW-109,"Discuss the future of AI in education.",AI & Education,medium,"AI can personalize learning and automate assessments.",1100,4.3,validation
+RAW-110,"Explain how batteries work.",Physics,medium,"Batteries convert chemical energy into electrical energy.",1000,4.3,validation
+RAW-111,"Explain 5G technology.",Technology,medium,"5G offers faster speeds, lower latency, and supports more connected devices.",950,4.4,validation
+RAW-112,"Write a sorting algorithm explanation.",Programming,medium,"Sorting algorithms organize data efficiently for faster retrieval.",1000,4.3,validation
+RAW-113,"Explain ethical hacking.",Cybersecurity,medium,"Ethical hackers test systems to identify vulnerabilities.",1000,4.4,validation
+RAW-114,"Discuss automation and jobs.",Economics,medium,"Automation can replace repetitive jobs but create new opportunities.",1200,4.2,validation
+RAW-115,"Explain microservices architecture.",Software Engineering,hard,"Microservices break applications into small independent services.",1300,4.3,validation
+RAW-116,"Explain the importance of critical thinking.",Education,easy,"Critical thinking helps analyze information and make better decisions.",700,4.5,validation
+RAW-117,"Describe Agile methodology.",Software Engineering,medium,"Agile focuses on iterative development and collaboration.",1000,4.4,validation
+RAW-118,"Explain human brain functions briefly.",Biology,medium,"The brain controls thoughts, memory, emotions, and bodily functions.",950,4.3,validation
+RAW-119,"Write a short sci-fi story.",Creative Writing,medium,"The ship drifted silently past the last star.",900,4.5,validation
+RAW-120,"Explain VR and AR differences.",Technology,medium,"VR immerses users fully, while AR overlays digital elements onto reality.",1000,4.4,validation
+RAW-121,"Explain NLP in AI.",AI,medium,"Natural Language Processing enables machines to understand human language.",1100,4.4,validation
+RAW-122,"Discuss privacy in social media.",Ethics,medium,"Social platforms collect vast data, raising privacy concerns.",1000,4.2,validation
+RAW-123,"Explain caching in systems.",Computer Science,medium,"Caching stores frequently used data for faster access.",950,4.3,validation
+RAW-124,"Describe operating systems.",Computer Science,easy,"An OS manages hardware and software resources.",800,4.4,validation
+RAW-125,"Explain encryption basics.",Cybersecurity,medium,"Encryption secures data by converting it into unreadable form.",1000,4.4,validation
+RAW-126,"Explain digital transformation.",Business,medium,"Digital transformation integrates technology into business processes.",1100,4.3,validation
+RAW-127,"Discuss AI risks.",AI Ethics,hard,"AI risks include bias, misuse, and lack of accountability.",1300,4.2,validation
+RAW-128,"Explain how recommendation systems work.",AI,medium,"They suggest items based on user preferences and behavior.",1100,4.4,validation
+RAW-129,"Write a function for binary search.",Programming,medium,"Binary search efficiently finds elements in sorted arrays.",850,4.5,validation
+RAW-130,"Explain smart cities.",Technology,medium,"Smart cities use data and technology to improve urban life.",1050,4.3,validation
+RAW-131,"Explain data visualization importance.",Data Science,easy,"Visualization helps understand complex data quickly.",800,4.5,validation
+RAW-132,"Discuss open-source software benefits.",Technology,medium,"Open-source promotes collaboration and transparency.",950,4.4,validation
+RAW-133,"Explain robotics basics.",Engineering,medium,"Robotics combines mechanics, electronics, and programming.",1000,4.3,validation
+RAW-134,"Describe the solar system.",Astronomy,easy,"The solar system consists of the Sun and orbiting planets.",850,4.4,validation
+RAW-135,"Explain UX vs UI design.",Design,medium,"UX focuses on experience, UI on visual interface.",900,4.5,validation
+RAW-136,"Explain distributed systems challenges.",Computer Science,hard,"Challenges include consistency, latency, and fault tolerance.",1300,4.3,validation
+RAW-137,"Write a simple chatbot logic.",Programming,medium,"A chatbot responds to user inputs using predefined rules or AI.",950,4.4,validation
+RAW-138,"Explain digital twins.",Technology,hard,"Digital twins are virtual replicas of physical systems.",1200,4.2,validation
+RAW-139,"Discuss green technology.",Environment,medium,"Green tech aims to reduce environmental impact.",1000,4.3,validation
+RAW-140,"Explain quantum computing basics.",Technology,hard,"Quantum computing uses qubits to perform complex calculations.",1300,4.2,validation
+RAW-141,"Explain APIs rate limiting.",Software Engineering,medium,"Rate limiting controls how many requests users can make.",950,4.4,validation
+RAW-142,"Discuss importance of sleep.",Health,easy,"Sleep is essential for recovery and cognitive function.",700,4.5,validation
+RAW-143,"Explain containerization (Docker).",DevOps,medium,"Containers package applications with dependencies for consistency.",1100,4.4,validation
+RAW-144,"Explain fintech.",Finance,medium,"Fintech uses technology to improve financial services.",1000,4.3,validation
+RAW-145,"Describe serverless computing.",Cloud Computing,medium,"Serverless allows running code without managing servers.",1050,4.4,validation
+RAW-146,"Explain attention mechanism in AI.",AI,hard,"Attention allows models to focus on relevant parts of data.",1300,4.3,validation
+RAW-147,"Discuss remote education pros and cons.",Education,medium,"Remote learning offers flexibility but challenges engagement.",1000,4.2,validation
+RAW-148,"Explain digital identity.",Cybersecurity,medium,"Digital identity represents users online through credentials.",950,4.3,validation
+RAW-149,"Explain edge AI.",AI,hard,"Edge AI processes data locally on devices rather than cloud.",1200,4.2,validation
+RAW-150,"Explain sustainability in business.",Business,medium,"Sustainability involves practices that balance profit, people, and planet.",1000,4.4,validation
